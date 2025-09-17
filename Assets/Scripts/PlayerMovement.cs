@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Read input
         Vector2 input = playerInput.actions["Move"].ReadValue<Vector2>();
-        Vector3 move = new Vector3(input.x, 0, input.y);
+        Vector3 move = new Vector3(input.x * -1, 0, input.y * -1);
         move = Vector3.ClampMagnitude(move, 1f);
         controller.Move(move * Time.deltaTime * playerSpeed);
 
