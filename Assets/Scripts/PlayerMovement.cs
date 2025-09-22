@@ -14,9 +14,11 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 playerVelocity;
     private bool groundedPlayer;
     private InputActionAsset asset;
+    [SerializeField] private GameObject PunchHitBox;
 
     private void Start()
     {
+        PunchHitBox.SetActive(false);
         controller = GetComponent<CharacterController>();
         playerInput = GetComponent<PlayerInput>();
     }
@@ -52,6 +54,23 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation = rotation;
         }
 
+        if (playerInput.actions["Punch"].triggered && PunchHitBox.activeInHierarchy == false)
+        {
+            Punch();
+        }
+    }
+
+    public void Punch()
+    {
+        PunchHitBox.SetActive(true);
+        //Debug.Log("Punching");
+        StartCoroutine(Delay());
         
+    }
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSecondsRealtime(.5f);
+        PunchHitBox.SetActive(false);
     }
 }
