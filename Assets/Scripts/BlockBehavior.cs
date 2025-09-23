@@ -19,19 +19,19 @@ public class BlockBehavior : MonoBehaviour
         //Debug.Log("Punch Registered");
         if (canMove)
         {
-            if (direction == 1)
+            if (direction == 1)//north hit box, pushes south
             {
                 rb.velocity = new Vector3(0, 0, -1 * SlideSpeed * Time.deltaTime);
             }
-            else if (direction == 2)
+            else if (direction == 2)//east hitbox, pushes west
             {
                 rb.velocity = new Vector3(-1 * SlideSpeed * Time.deltaTime, 0, 0);
             }
-            else if (direction == 3)
+            else if (direction == 3)//south hitbox, pushes north
             {
                 rb.velocity = new Vector3(0, 0, 1 * SlideSpeed * Time.deltaTime);
             }
-            else if (direction == 4)
+            else if (direction == 4)//west hitbox, pushes east
             {
                 rb.velocity = new Vector3(1 * SlideSpeed * Time.deltaTime, 0, 0);
             }
