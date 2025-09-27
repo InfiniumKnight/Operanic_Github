@@ -6,21 +6,28 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     private float playerSpeed = 5.0f;
+    private float dashSpeed = 20.0f;
     private float jumpHeight = 1.5f;
     private float gravityValue = -9.81f;
 
     private CharacterController controller;
     private PlayerInput playerInput;
     private Vector3 playerVelocity;
+    public Vector3 move;
     private bool groundedPlayer;
     private InputActionAsset asset;
     [SerializeField] private GameObject PunchHitBox;
+    public float dashCooldown = 0f;
+    public float dashTime = .08f;
 
     private void Start()
     {
         PunchHitBox.SetActive(false);
         controller = GetComponent<CharacterController>();
         playerInput = GetComponent<PlayerInput>();
+
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
     }
 
     void Update()
@@ -33,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Read input
         Vector2 input = playerInput.actions["Move"].ReadValue<Vector2>();
-        Vector3 move = new Vector3(input.x, 0, input.y);
+        move = new Vector3(input.x, 0, input.y);
         move = Vector3.ClampMagnitude(move, 1f);
         controller.Move(move * Time.deltaTime * playerSpeed);
 
@@ -41,6 +48,15 @@ public class PlayerMovement : MonoBehaviour
         if (playerInput.actions["Jump"].triggered && groundedPlayer)
         {
             playerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+        }
+
+        if (playerInput.actions["Dash"].triggered && dashCooldown <= 0f)
+        {
+            StartCoroutine(Dash());
+        }
+        else if (dashCooldown > 0f)
+        {
+            dashCooldown -= Time.deltaTime;
         }
 
         // Apply gravity
@@ -66,6 +82,19 @@ public class PlayerMovement : MonoBehaviour
         //Debug.Log("Punching");
         StartCoroutine(Delay());
         
+    }
+
+    IEnumerator Dash()
+    {
+        float startTime = Time.time;
+
+        while(Time.time < startTime + dashTime)
+        {
+            controller.Move(move * Time.deltaTime * dashSpeed);
+            dashCooldown = 1.5f;
+
+            yield return null;
+        }
     }
 
     IEnumerator Delay()

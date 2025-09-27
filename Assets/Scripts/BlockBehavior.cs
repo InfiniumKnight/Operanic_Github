@@ -7,6 +7,10 @@ public class BlockBehavior : MonoBehaviour
 
     [SerializeField] private float SlideSpeed = 30f;
     [SerializeField] private Rigidbody rb;
+
+    [SerializeField] private string GoalTag;
+
+    [SerializeField] Activation activation;
     private bool canMove = true;
 
     private void Start()
@@ -46,6 +50,20 @@ public class BlockBehavior : MonoBehaviour
             Debug.Log("Hit Wall");
             rb.velocity = new Vector3(0,0,0);
             canMove = true;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(canMove == true)
+        {
+            if (other.gameObject.tag == GoalTag)
+            {
+                activation.Activate();
+                Debug.Log("reachGoal");
+                Destroy(rb);
+                canMove = false;
+            }
         }
     }
 
