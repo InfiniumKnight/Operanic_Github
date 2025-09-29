@@ -144,6 +144,17 @@
                 },
                 {
                     "name": "",
+                    "id": "0cce3956-be88-4311-8705-739442631a97",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "6199f490-40a4-4512-8e42-9592526372d7",
                     "path": "<Gamepad>/buttonEast",
                     "interactions": "",
