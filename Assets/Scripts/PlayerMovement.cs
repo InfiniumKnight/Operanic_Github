@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
     public float dashCooldown = 0f;
     public float dashTime = .08f;
 
+    public Vector3 RespawnCoords;
+
     private void Start()
     {
         PunchHitBox.SetActive(false);
@@ -101,5 +103,13 @@ public class PlayerMovement : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(.5f);
         PunchHitBox.SetActive(false);
+    }
+
+    public void Respawn()
+    {
+        Debug.Log("Respawn Called");
+        controller.enabled = false;
+        gameObject.transform.position = RespawnCoords;
+        controller.enabled = true;
     }
 }
