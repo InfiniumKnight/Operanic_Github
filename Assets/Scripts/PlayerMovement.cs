@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private float playerSpeed = 5.0f;
     private float dashSpeed = 20.0f;
-    private float jumpHeight = 1.5f;
+    private float jumpHeight = 3f;
     private float gravityValue = -9.81f;
 
     private CharacterController controller;
