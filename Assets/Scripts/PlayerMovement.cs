@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -35,10 +36,6 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         groundedPlayer = controller.isGrounded;
-        if (groundedPlayer && playerVelocity.y < 0)
-        {
-            playerVelocity.y = 0f;
-        }
 
         // Read input
         Vector2 input = playerInput.actions["Move"].ReadValue<Vector2>();
@@ -76,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Punch();
         }
+
     }
 
     public void Punch()
