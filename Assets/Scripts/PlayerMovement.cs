@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
     private float playerSpeed = 5.0f;
     private float dashSpeed = 20.0f;
-    private float jumpHeight = 1.5f;
+    private float jumpHeight = 3f;
     private float gravityValue = -9.81f;
 
     private CharacterController controller;
@@ -19,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject PunchHitBox;
     public float dashCooldown = 0f;
     public float dashTime = .08f;
+
+    public Vector3 RespawnCoords;
 
     private void Start()
     {
@@ -33,10 +36,6 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         groundedPlayer = controller.isGrounded;
-        if (groundedPlayer && playerVelocity.y < 0)
-        {
-            playerVelocity.y = 0f;
-        }
 
         // Read input
         Vector2 input = playerInput.actions["Move"].ReadValue<Vector2>();
@@ -74,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Punch();
         }
+
     }
 
     public void Punch()
@@ -101,5 +101,13 @@ public class PlayerMovement : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(.5f);
         PunchHitBox.SetActive(false);
+    }
+
+    public void Respawn()
+    {
+        Debug.Log("Respawn Called");
+        controller.enabled = false;
+        gameObject.transform.position = RespawnCoords;
+        controller.enabled = true;
     }
 }

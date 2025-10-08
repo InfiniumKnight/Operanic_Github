@@ -4,5 +4,9 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/LVL_ArtPrototype.unity
+    guid: 662ebfb4e5cb343438ed19e3de10cb9f
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 7065d5c951f20724284fe928cf9796d6, type: 3}
