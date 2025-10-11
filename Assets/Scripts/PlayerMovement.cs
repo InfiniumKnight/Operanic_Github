@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float playerSpeed = 5.0f;
+    [Header("Movement and GameObjects")]
+    [SerializeField] private float playerSpeed = 5.0f;
     private float dashSpeed = 20.0f;
     private float jumpHeight = 3f;
     private float gravityValue = -9.81f;
@@ -23,11 +24,22 @@ public class PlayerMovement : MonoBehaviour
 
     public Vector3 RespawnCoords;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip JumpSound;
+    [SerializeField] private AudioClip PunchSound;
+    [SerializeField] private AudioClip DashSound;
+    [SerializeField] private AudioClip HurtSound;
+    [SerializeField] private float Volume = 50;
+
     private void Start()
     {
         PunchHitBox.SetActive(false);
         controller = GetComponent<CharacterController>();
         playerInput = GetComponent<PlayerInput>();
+
+        audioSource = GetComponent<AudioSource>();
+        audioSource.volume = Volume;
 
         //Cursor.lockState = CursorLockMode.Locked;
         //Cursor.visible = false;
@@ -47,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
         if (playerInput.actions["Jump"].triggered && groundedPlayer)
         {
             playerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+            audioSource.PlayOneShot(JumpSound);
         }
 
         if (playerInput.actions["Dash"].triggered && dashCooldown <= 0f)
@@ -79,6 +92,7 @@ public class PlayerMovement : MonoBehaviour
     public void Punch()
     {
         PunchHitBox.SetActive(true);
+        audioSource.PlayOneShot(PunchSound);
         //Debug.Log("Punching");
         StartCoroutine(Delay());
         
@@ -87,10 +101,12 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator Dash()
     {
         float startTime = Time.time;
+        audioSource.PlayOneShot(DashSound);
 
-        while(Time.time < startTime + dashTime)
+        while (Time.time < startTime + dashTime)
         {
             controller.Move(move * Time.deltaTime * dashSpeed);
+            
             dashCooldown = 1.5f;
 
             yield return null;
@@ -105,6 +121,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Respawn()
     {
+        audioSource.PlayOneShot(HurtSound);
         Debug.Log("Respawn Called");
         controller.enabled = false;
         gameObject.transform.position = RespawnCoords;
