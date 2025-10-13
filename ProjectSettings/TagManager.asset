@@ -8,6 +8,7 @@ TagManager:
   - Wall
   - PunchBox
   - Box1Goal
+  - FlickeringLight
   layers:
   - Default
   - TransparentFX
