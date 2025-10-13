@@ -834,6 +834,7 @@ GameObject:
   - component: {fileID: 1116411866}
   - component: {fileID: 1116411865}
   - component: {fileID: 1116411864}
+  - component: {fileID: 1116411867}
   m_Layer: 5
   m_Name: Arm_Button
   m_TagString: Untagged
@@ -966,6 +967,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116411862}
   m_CullTransparentMesh: 1
+--- !u!114 &1116411867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116411862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ControlPath: <Gamepad>/buttonSouth
 --- !u!1 &1228218486
 GameObject:
   m_ObjectHideFlags: 0
@@ -1053,6 +1067,7 @@ GameObject:
   - component: {fileID: 1644492473}
   - component: {fileID: 1644492472}
   - component: {fileID: 1644492471}
+  - component: {fileID: 1644492475}
   m_Layer: 5
   m_Name: Torso_Button
   m_TagString: Untagged
@@ -1185,6 +1200,19 @@ RectTransform:
   m_AnchoredPosition: {x: -191.60995, y: 10.376}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0.5}
+--- !u!114 &1644492475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644492470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d54531977ecb194c95e2d3aa7a5d72a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ControlPath: <Gamepad>/buttonSouth
 --- !u!1 &1806974497
 GameObject:
   m_ObjectHideFlags: 0
