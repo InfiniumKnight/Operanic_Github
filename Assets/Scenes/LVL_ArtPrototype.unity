@@ -14255,10 +14255,10 @@ MonoBehaviour:
   dashTime: 0.2
   RespawnCoords: {x: 0, y: 0, z: 0}
   audioSource: {fileID: 0}
-  JumpSound: {fileID: 8300000, guid: e607ddd2b6b71aa469dcc99d9f02bdcd, type: 3}
+  JumpSound: {fileID: 8300000, guid: 3a9f38844170a804a9a967780c888f8b, type: 3}
   PunchSound: {fileID: 8300000, guid: 8d0be93305a8de9419aa9e5b71fd2d4f, type: 3}
-  DashSound: {fileID: 8300000, guid: ec1a2f82c5c531e4f9c68bf978a39522, type: 3}
-  HurtSound: {fileID: 8300000, guid: a883f15ceac006244801f738ae0cb5ed, type: 3}
+  DashSound: {fileID: 8300000, guid: 52bafb035006f7e44a94fc1fa6f57989, type: 3}
+  HurtSound: {fileID: 8300000, guid: b0e247f5cff852745942d320040deff2, type: 3}
   Volume: 50
 --- !u!136 &2138553070
 CapsuleCollider:
