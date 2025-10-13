@@ -24,7 +24,7 @@ public class LevelSelect : MonoBehaviour
 
     public void TorsoSelect()
     {
-        SceneManager.LoadScene("LVL_Torso"); //Takes you to Torso Stage
+        SceneManager.LoadScene("TEMP_UnderConstruction"); //Takes you to Construction page, should be updated for Torso later
     }
 
     public void PreArmSelect()
