@@ -9,7 +9,7 @@ public class LevelEndTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player")) //Only activates if it collides with Player tag
         {
-            SceneManager.LoadScene("LVL_LevelFinish"); //Automatically takes back to temp win screen, should be changed to animate back to hub menu later
+            SceneManager.LoadScene("TEMP_LevelFinish"); //Automatically takes back to temp win screen, should be changed to animate back to hub menu later
         }
     }
 }
