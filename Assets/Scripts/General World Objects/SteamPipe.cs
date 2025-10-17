@@ -5,6 +5,8 @@ using UnityEngine;
 public class SteamPipe : MonoBehaviour
 {
     [SerializeField] private GameObject SteamHitBox;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip SteamSound;
 
     public float DelayBetweenBlasts = 1f;
     public float BlastDuration = .5f;
@@ -32,6 +34,7 @@ public class SteamPipe : MonoBehaviour
 
     IEnumerator Delay()
     {
+        //audioSource.PlayOneShot(SteamSound);
         yield return new WaitForSecondsRealtime(BlastDuration);
         SteamHitBox.SetActive(false);
         SincelastBlast = 0;

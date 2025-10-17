@@ -8,6 +8,8 @@ public class StringPunch : MonoBehaviour
     [SerializeField] GameObject self;
     [SerializeField] Material punchedColor;
     [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip StringTone;
+
     public int StringNum;
 
     public bool CanBePunched = true;
@@ -25,8 +27,14 @@ public class StringPunch : MonoBehaviour
             {
                 self.gameObject.GetComponent<MeshRenderer>().material = punchedColor;
                 parent.AddToOrder(self);
+                //PlayTone();
                 CanBePunched = false;
             }
         }
+    }
+
+    public void PlayTone()
+    {
+        audioSource.PlayOneShot(StringTone);
     }
 }

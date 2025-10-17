@@ -8,6 +8,10 @@ public class BlockBehavior : MonoBehaviour
     [SerializeField] private float SlideSpeed = 30f;
     [SerializeField] private Rigidbody rb;
 
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip SlideSound;
+    [SerializeField] AudioClip ClickIntoPlace;
+
     [SerializeField] private string GoalTag;
 
     [SerializeField] Activation activation;
@@ -16,6 +20,7 @@ public class BlockBehavior : MonoBehaviour
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     public void Punched(int direction)
@@ -61,6 +66,7 @@ public class BlockBehavior : MonoBehaviour
             {
                 activation.Activate();
                 Debug.Log("reachGoal");
+                //audioSource.PlayOneShot(ClickIntoPlace);
                 Destroy(rb);
                 canMove = false;
             }
