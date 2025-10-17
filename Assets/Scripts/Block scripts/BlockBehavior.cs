@@ -44,6 +44,9 @@ public class BlockBehavior : MonoBehaviour
             {
                 rb.velocity = new Vector3(1 * SlideSpeed * Time.deltaTime, 0, 0);
             }
+            //audioSource.clip = SlideSound;
+            //audioSource.loop = true;
+            //audioSource.Play();
         }
         canMove = false;
     }
@@ -53,6 +56,9 @@ public class BlockBehavior : MonoBehaviour
         if(other.gameObject.tag == "Wall")
         {
             Debug.Log("Hit Wall");
+            //audioSource.Stop();
+            //audioSource.loop = false;
+            //audioSource.clip = null;
             rb.velocity = new Vector3(0,0,0);
             canMove = true;
         }
