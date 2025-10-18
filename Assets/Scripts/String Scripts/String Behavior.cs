@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class StringBehavior : MonoBehaviour
-{
+{ 
     [Header("GameObjectArrays")]
     [SerializeField] private List<GameObject> CorrectOrder;
     [SerializeField] private List<GameObject> InputedOrder;
@@ -60,8 +60,10 @@ public class StringBehavior : MonoBehaviour
                 {
                     CorrectOrder[x].gameObject.GetComponent<MeshRenderer>().material = CorrectColor;
                     NumHitsRegistered = 0;
+                    
                 }
             }
+
         }
     }
     public void PlaySequence()

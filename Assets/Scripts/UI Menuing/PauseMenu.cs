@@ -11,11 +11,12 @@ public class PauseMenu : MonoBehaviour
     public GameObject UI_InGame;
     public bool isPaused;
 
-    [Header("Audio")]
+    /*[Header("Audio")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip clickSound; //for clicking on a menu part while paused
     [SerializeField] private AudioClip backSound; //for clicking back to the game
     [SerializeField] private AudioClip pauseSound; //for pausing at all
+    [SerializeField] private float Volume = 50;*/
 
 
     // Start is called before the first frame update
@@ -23,6 +24,8 @@ public class PauseMenu : MonoBehaviour
     {
         UI_Pause.SetActive(false);
         //Time.timeScale = 0;
+        //audioSource = GetComponent<AudioSource>();
+        //audioSource.volume = Volume;
     }
 
     // Update is called once per frame
@@ -33,12 +36,12 @@ public class PauseMenu : MonoBehaviour
             if (isPaused)
             {
                 ResumeGame();
-                audioSource.PlayOneShot(backSound);
+                //audioSource.PlayOneShot(backSound);
             }
             else
             {
                 PauseGame();
-                audioSource.PlayOneShot(pauseSound);
+                //audioSource.PlayOneShot(pauseSound);
             }
         }
     }
@@ -62,7 +65,7 @@ public class PauseMenu : MonoBehaviour
     public void ToMainMenu()
     {
         Time.timeScale = 1f;
-        audioSource.PlayOneShot(backSound);
+        //audioSource.PlayOneShot(backSound);
         SceneManager.LoadScene("LVL_LevelSelect");
     }
     public void Quit()

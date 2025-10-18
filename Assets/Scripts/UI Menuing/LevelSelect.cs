@@ -11,11 +11,14 @@ public class LevelSelect : MonoBehaviour
     public GameObject ArmSelectUI;
     public GameObject TorsoSelectUI;
 
-    [Header("Audio")]
+    /*[Header("Audio")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip preMenuClick; //clicking on the body part to go to the level confirmation
     [SerializeField] private AudioClip postMenuClick; //clicking on the body part to go to the level
     [SerializeField] private AudioClip closeMenu; //hitting close to go back
+    [SerializeField] private float Volume = 50;*/
+
+
 
 
     // Start is called before the first frame update
@@ -23,40 +26,42 @@ public class LevelSelect : MonoBehaviour
     {
         ArmSelectUI.SetActive(false);
         TorsoSelectUI.SetActive(false);
+        //audioSource = GetComponent<AudioSource>();
+       // audioSource.volume = Volume;
     }
     public void ArmSelect()
     {
-        audioSource.PlayOneShot(postMenuClick);
+        //audioSource.PlayOneShot(postMenuClick);
         SceneManager.LoadScene("LVL_ArtPrototype"); //Should be changed when Art Prototype is not the name of the Arm Level scene anymore
     }
 
     public void TorsoSelect()
     {
-        audioSource.PlayOneShot(postMenuClick);
+        //audioSource.PlayOneShot(postMenuClick);
         SceneManager.LoadScene("LVL_Torso"); //Takes you to Torso level
     }
 
     public void PreArmSelect()
     {
-        audioSource.PlayOneShot(preMenuClick);
+        //audioSource.PlayOneShot(preMenuClick);
         ArmSelectUI.SetActive(true); //Activates secondary UI to show gif of arm and start stage
     }
 
     public void UndoArmSelect()
     {
-        audioSource.PlayOneShot(closeMenu);
+        //audioSource.PlayOneShot(closeMenu);
         ArmSelectUI.SetActive(false); //Undoes the above
     }
 
     public void PreTorsoSelect()
     {
-        audioSource.PlayOneShot(preMenuClick);
+        //audioSource.PlayOneShot(preMenuClick);
         TorsoSelectUI.SetActive(true); //Activates secondary UI to show gif of torso and start sage
     }
 
     public void UndoTorsoSelect()
     {
-        audioSource.PlayOneShot(closeMenu);
+       // audioSource.PlayOneShot(closeMenu);
         TorsoSelectUI.SetActive(false); //Undoes the above
     }
 
