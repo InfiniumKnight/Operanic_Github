@@ -3579,7 +3579,7 @@ MonoBehaviour:
   SlideSound: {fileID: 0}
   ClickIntoPlace: {fileID: 0}
   GoalTag: Box1Goal
-  activation: {fileID: 0}
+  activation: {fileID: 1711954653}
 --- !u!54 &522016659
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4318,7 +4318,7 @@ MonoBehaviour:
   SlideSound: {fileID: 0}
   ClickIntoPlace: {fileID: 0}
   GoalTag: Box1Goal
-  activation: {fileID: 0}
+  activation: {fileID: 1711954653}
 --- !u!54 &608756925
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7564,7 +7564,7 @@ MonoBehaviour:
   SlideSound: {fileID: 0}
   ClickIntoPlace: {fileID: 0}
   GoalTag: Box1Goal
-  activation: {fileID: 0}
+  activation: {fileID: 1711954653}
 --- !u!54 &1007065426
 Rigidbody:
   m_ObjectHideFlags: 0

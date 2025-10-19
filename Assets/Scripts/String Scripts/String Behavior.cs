@@ -23,7 +23,7 @@ public class StringBehavior : MonoBehaviour
     [Header("General Variables")]
     [SerializeField] private float SequencePlaySpeed;
     [SerializeField] private int PuzzleNum;
-    //[SerializeField] private GameManager gameManager;
+    [SerializeField] private GameManager gameManager;
 
     private int NumCorrect;
 
@@ -55,7 +55,7 @@ public class StringBehavior : MonoBehaviour
             if(NumCorrect == CorrectOrder.Count)
             {
                 //audioSource.PlayOneShot(CorrectSound);
-                //gameManager.PuzzleDone(PuzzleNum);
+                gameManager.PuzzleDone(PuzzleNum);
                 for (int x = 0; x < CorrectOrder.Count; x++)
                 {
                     CorrectOrder[x].gameObject.GetComponent<MeshRenderer>().material = CorrectColor;

@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class TorsoManager : GameManager
 {
+    [SerializeField] GameObject EndZone;
+
     public override void PuzzleDone(int PuzzleNum)
     {
         if(PuzzleNum == 1)
         {
-            //do something
+            EndZone.SetActive(true);
         }
         else if(PuzzleNum == 2)
         {
