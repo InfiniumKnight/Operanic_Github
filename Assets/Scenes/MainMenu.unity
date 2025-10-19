@@ -1595,8 +1595,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   src: {fileID: 2117955068}
-  sfx1: {fileID: 8300000, guid: 52bafb035006f7e44a94fc1fa6f57989, type: 3}
-  sfx2: {fileID: 8300000, guid: b0e247f5cff852745942d320040deff2, type: 3}
+  sfx1: {fileID: 8300000, guid: a2abce789b7f1a645a6d85e629bf7ee1, type: 3}
+  sfx2: {fileID: 8300000, guid: a37941bddf95830408c8bd6ae447ba96, type: 3}
 --- !u!1 &1440064428
 GameObject:
   m_ObjectHideFlags: 0
