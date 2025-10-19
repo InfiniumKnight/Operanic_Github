@@ -6,6 +6,8 @@ public class TorsoManager : GameManager
 {
     [SerializeField] GameObject EndZone;
 
+
+
     public override void PuzzleDone(int PuzzleNum)
     {
         if(PuzzleNum == 1)
