@@ -6,7 +6,7 @@ public class Activation : MonoBehaviour
 {
     [SerializeField] private int numOfActivationsNeeded = 1;
     [SerializeField] private int PuzzleNum;
-    //[SerializeField] private GameManager gameManager;
+    [SerializeField] private GameManager gameManager;
     private int numOfActivationsAchieved;
 
     public void Activate()
@@ -14,7 +14,7 @@ public class Activation : MonoBehaviour
         numOfActivationsAchieved++;
         if (numOfActivationsAchieved >= numOfActivationsNeeded)
         {
-            //gameManager.PuzzleDone(PuzzleNum);
+            gameManager.PuzzleDone(PuzzleNum);
         }
     }
 }

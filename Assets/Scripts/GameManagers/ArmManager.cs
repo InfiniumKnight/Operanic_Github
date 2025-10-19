@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class ArmManager : GameManager
 {
+    [SerializeField] private Rigidbody rb;
+
+    private void Start()
+    {
+        rb = gameObject.GetComponent<Rigidbody>();
+    }
     public override void PuzzleDone(int PuzzleNum)
     {
         if (PuzzleNum == 1)
         {
-            //do something
+            Destroy(rb);
         }
         else if (PuzzleNum == 2)
         {
