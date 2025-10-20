@@ -35,7 +35,7 @@ public class StringBehavior : MonoBehaviour
             {
                 if (CorrectOrder[b].gameObject.GetComponent<StringPunch>().StringNum != InputedOrder[b].gameObject.GetComponent<StringPunch>().StringNum)
                 {
-                    //audio source call here
+                    audioSource.PlayOneShot(IncorrectSound);
                     for (int x = 0; x < CorrectOrder.Count; x++)
                     {
                         CorrectOrder[x].gameObject.GetComponent<MeshRenderer>().material = IncorrectColor;
@@ -76,9 +76,10 @@ public class StringBehavior : MonoBehaviour
         for (int i = 0; i < CorrectOrder.Count; i++)
         {
             CorrectOrder[i].gameObject.GetComponent<MeshRenderer>().material = FlashMaterial;
+            CorrectOrder[i].gameObject.GetComponent<StringPunch>().PlayTone();
             yield return new WaitForSecondsRealtime(SequencePlaySpeed);
             CorrectOrder[i].gameObject.GetComponent<MeshRenderer>().material = BaseColor;
-            CorrectOrder[i].gameObject.GetComponent<StringPunch>().PlayTone();
+            
         }
     }
 

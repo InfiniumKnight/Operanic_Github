@@ -1559,9 +1559,9 @@ MonoBehaviour:
   FlashMaterial: {fileID: 2100000, guid: 27483c2e57a0bdd4985cdc89681f323b, type: 2}
   CorrectColor: {fileID: 2100000, guid: 8a11a2f691ead8f468c38373cd3e1268, type: 2}
   IncorrectColor: {fileID: 2100000, guid: 49ee5acc571e6264d93bf0303981fc66, type: 2}
-  audioSourc: {fileID: 0}
-  CorrectSound: {fileID: 0}
-  IncorrectSound: {fileID: 0}
+  audioSource: {fileID: 847255064}
+  CorrectSound: {fileID: 8300000, guid: 6f61adb8ac214904ab3adb4302b4e327, type: 3}
+  IncorrectSound: {fileID: 8300000, guid: edbcf06ba92623e419434e4a8aa036f9, type: 3}
   SequencePlaySpeed: 1
   PuzzleNum: 1
   gameManager: {fileID: 1822803136}
@@ -1906,7 +1906,7 @@ MonoBehaviour:
   self: {fileID: 0}
   punchedColor: {fileID: 2100000, guid: 27483c2e57a0bdd4985cdc89681f323b, type: 2}
   audioSource: {fileID: 0}
-  StringTone: {fileID: 0}
+  StringTone: {fileID: 8300000, guid: fc10c8098710f3b48873d5513c1a80aa, type: 3}
   StringNum: 1
   CanBePunched: 1
 --- !u!136 &939893487
@@ -2471,7 +2471,7 @@ MonoBehaviour:
   self: {fileID: 0}
   punchedColor: {fileID: 2100000, guid: 27483c2e57a0bdd4985cdc89681f323b, type: 2}
   audioSource: {fileID: 0}
-  StringTone: {fileID: 0}
+  StringTone: {fileID: 8300000, guid: b8c52b9df458139498202fec0ce25ba1, type: 3}
   StringNum: 4
   CanBePunched: 1
 --- !u!136 &1137442547
@@ -2973,7 +2973,7 @@ MonoBehaviour:
   self: {fileID: 0}
   punchedColor: {fileID: 2100000, guid: 27483c2e57a0bdd4985cdc89681f323b, type: 2}
   audioSource: {fileID: 0}
-  StringTone: {fileID: 0}
+  StringTone: {fileID: 8300000, guid: de91c69e9fec9e6428d7f02bf27bc259, type: 3}
   StringNum: 3
   CanBePunched: 1
 --- !u!136 &1441369885
@@ -3919,7 +3919,7 @@ MonoBehaviour:
   self: {fileID: 0}
   punchedColor: {fileID: 2100000, guid: 27483c2e57a0bdd4985cdc89681f323b, type: 2}
   audioSource: {fileID: 0}
-  StringTone: {fileID: 0}
+  StringTone: {fileID: 8300000, guid: 34b508df18bbd1f408c15c8b7e4a7c2c, type: 3}
   StringNum: 2
   CanBePunched: 1
 --- !u!136 &1909030515
