@@ -8,7 +8,7 @@ public class SteamPipe : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip SteamSound;
 
-    public float DelayBetweenBlasts = 1f;
+    public float DelayBetweenBlasts = 4f;
     public float BlastDuration = .5f;
 
     private float SincelastBlast;
@@ -16,6 +16,7 @@ public class SteamPipe : MonoBehaviour
     void Start()
     {
         SteamHitBox.SetActive(false);
+        audioSource.gameObject.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -26,17 +27,20 @@ public class SteamPipe : MonoBehaviour
         }
         else if ( SincelastBlast >= DelayBetweenBlasts)
         {
-            SteamHitBox.SetActive(true);
+            
             StartCoroutine(Delay());
+            SincelastBlast = 0;
 
         }
     }
 
     IEnumerator Delay()
     {
+        SteamHitBox.SetActive(true);
         audioSource.PlayOneShot(SteamSound);
         yield return new WaitForSecondsRealtime(BlastDuration);
         SteamHitBox.SetActive(false);
-        SincelastBlast = 0;
+        audioSource.Stop();
+        
     }
 }
