@@ -14,6 +14,7 @@ public class Activation : MonoBehaviour
         numOfActivationsAchieved++;
         if (numOfActivationsAchieved >= numOfActivationsNeeded)
         {
+            Debug.Log("Disabling Puzzle 1 wall");
             gameManager.PuzzleDone(PuzzleNum);
         }
     }

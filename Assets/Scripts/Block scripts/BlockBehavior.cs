@@ -64,7 +64,7 @@ public class BlockBehavior : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if(canMove == true)
         {

@@ -10,11 +10,12 @@ public class ArmManager : GameManager
     {
         if (PuzzleNum == 1)
         {
+            
             PuzzleBarriers[0].SetActive(false);
         }
         else if (PuzzleNum == 2)
         {
-            //Do something else
+            PuzzleBarriers[1].SetActive(false);
         }
         //so on and so forth
     }
