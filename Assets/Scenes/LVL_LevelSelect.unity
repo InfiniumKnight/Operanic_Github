@@ -784,7 +784,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1970885817}
+      - m_Target: {fileID: 1853898622}
         m_TargetAssemblyTypeName: MenuSFXAndLoad, Assembly-CSharp
         m_MethodName: PlayClickAndLoad
         m_Mode: 5
@@ -1069,7 +1069,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1970885817}
+      - m_Target: {fileID: 1853898622}
         m_TargetAssemblyTypeName: MenuSFXAndLoad, Assembly-CSharp
         m_MethodName: PlayClick
         m_Mode: 1
@@ -1295,7 +1295,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1970885817}
+      - m_Target: {fileID: 1853898622}
         m_TargetAssemblyTypeName: MenuSFXAndLoad, Assembly-CSharp
         m_MethodName: PlayClick
         m_Mode: 1
@@ -1471,7 +1471,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1970885817}
+      - m_Target: {fileID: 1853898622}
         m_TargetAssemblyTypeName: MenuSFXAndLoad, Assembly-CSharp
         m_MethodName: PlayBack
         m_Mode: 1
@@ -1521,6 +1521,54 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806974497}
   m_CullTransparentMesh: 1
+--- !u!1 &1853898621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1853898623}
+  - component: {fileID: 1853898622}
+  m_Layer: 0
+  m_Name: SoundEffectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1853898622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853898621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1675ec9d6ba217d44a74a562e162492e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  src: {fileID: 813327380}
+  clickSfx: {fileID: 8300000, guid: a2abce789b7f1a645a6d85e629bf7ee1, type: 3}
+  backSfx: {fileID: 8300000, guid: a37941bddf95830408c8bd6ae447ba96, type: 3}
+  sceneLoadDelay: 0.5
+--- !u!4 &1853898623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853898621}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 877.79114, y: 604.3723, z: -173.75064}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1932301025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1615,7 +1663,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1970885817}
+      - m_Target: {fileID: 1853898622}
         m_TargetAssemblyTypeName: MenuSFXAndLoad, Assembly-CSharp
         m_MethodName: PlayClickAndLoad
         m_Mode: 5
@@ -1678,7 +1726,6 @@ GameObject:
   - component: {fileID: 1970885814}
   - component: {fileID: 1970885813}
   - component: {fileID: 1970885816}
-  - component: {fileID: 1970885817}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1788,21 +1835,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ArmSelectUI: {fileID: 2143802807}
   TorsoSelectUI: {fileID: 18058396}
---- !u!114 &1970885817
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1970885811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1675ec9d6ba217d44a74a562e162492e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  src: {fileID: 813327380}
-  clickSfx: {fileID: 8300000, guid: a2abce789b7f1a645a6d85e629bf7ee1, type: 3}
-  backSfx: {fileID: 8300000, guid: a37941bddf95830408c8bd6ae447ba96, type: 3}
 --- !u!1 &2077669481
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,7 +1929,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1970885817}
+      - m_Target: {fileID: 1853898622}
         m_TargetAssemblyTypeName: MenuSFXAndLoad, Assembly-CSharp
         m_MethodName: PlayBack
         m_Mode: 1
@@ -2034,3 +2066,4 @@ SceneRoots:
   - {fileID: 1970885812}
   - {fileID: 491053644}
   - {fileID: 813327381}
+  - {fileID: 1853898623}

@@ -4,12 +4,11 @@ using System.Collections;
 
 public class MenuSFXAndLoad : MonoBehaviour
 {
-    [Header("Audio")]
     public AudioSource src;
-    public AudioClip clickSfx;  
-    public AudioClip backSfx;   
+    public AudioClip clickSfx;
+    public AudioClip backSfx;
+    public float sceneLoadDelay = .5f; // Loading Scene Delay
 
-    // Loading Scenes Button "Play" "Level Select"
     public void PlayClickAndLoad(string sceneName)
     {
         StartCoroutine(PlayThenLoad(clickSfx, sceneName));
@@ -22,16 +21,17 @@ public class MenuSFXAndLoad : MonoBehaviour
 
     private IEnumerator PlayThenLoad(AudioClip clip, string sceneName)
     {
-        if (clip != null) src.PlayOneShot(clip);
+        if (clip != null)
+            src.PlayOneShot(clip);
 
-        // Fallback if clip is null
-        float wait = clip != null ? clip.length : 0f;
-        yield return new WaitForSecondsRealtime(wait);
+        // Wait timer before loading scene
+        yield return new WaitForSecondsRealtime(sceneLoadDelay);
 
         SceneManager.LoadScene(sceneName);
     }
 
-    // Normal Buttons that doesnt load scenes
+    // Sound for regular buttons
     public void PlayClick() { if (clickSfx) src.PlayOneShot(clickSfx); }
-    public void PlayBack()  { if (backSfx)  src.PlayOneShot(backSfx);  }
+    public void PlayBack()  { if (backSfx)  src.PlayOneShot(backSfx); }
 }
+
