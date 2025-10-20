@@ -366,8 +366,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1337511453}
-        m_TargetAssemblyTypeName: SoundEffectMenu, Assembly-CSharp
-        m_MethodName: Sound1
+        m_TargetAssemblyTypeName: MenuSFXAndLoad, Assembly-CSharp
+        m_MethodName: PlayClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -666,8 +666,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1337511453}
-        m_TargetAssemblyTypeName: SoundEffectMenu, Assembly-CSharp
-        m_MethodName: Sound2
+        m_TargetAssemblyTypeName: MenuSFXAndLoad, Assembly-CSharp
+        m_MethodName: PlayBack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -888,15 +888,15 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1337511453}
-        m_TargetAssemblyTypeName: SoundEffectMenu, Assembly-CSharp
-        m_MethodName: Sound1
-        m_Mode: 1
+        m_TargetAssemblyTypeName: MenuSFXAndLoad, Assembly-CSharp
+        m_MethodName: PlayClickAndLoad
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: LVL_ArtPrototype
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &844686075
@@ -1425,7 +1425,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1313663305}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1337511452}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: LevelSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1337511453}
+        m_TargetAssemblyTypeName: MenuSFXAndLoad, Assembly-CSharp
+        m_MethodName: PlayClickAndLoad
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LVL_LevelSelect
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1313663305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1595,8 +1619,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   src: {fileID: 2117955068}
-  sfx1: {fileID: 8300000, guid: a2abce789b7f1a645a6d85e629bf7ee1, type: 3}
-  sfx2: {fileID: 8300000, guid: a37941bddf95830408c8bd6ae447ba96, type: 3}
+  clickSfx: {fileID: 8300000, guid: a2abce789b7f1a645a6d85e629bf7ee1, type: 3}
+  backSfx: {fileID: 8300000, guid: a37941bddf95830408c8bd6ae447ba96, type: 3}
 --- !u!1 &1440064428
 GameObject:
   m_ObjectHideFlags: 0

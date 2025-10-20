@@ -7,4 +7,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("LVL_ArtPrototype");
     }
+
+        public void LevelSelect()
+    {
+        SceneManager.LoadScene("LVL_LevelSelect");
+    }
 }

@@ -6452,15 +6452,15 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1183179967}
-        m_TargetAssemblyTypeName: SoundEffectMenu, Assembly-CSharp
-        m_MethodName: Sound1
-        m_Mode: 1
+        m_TargetAssemblyTypeName: MenuSFXAndLoad, Assembly-CSharp
+        m_MethodName: PlayClickAndLoad
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: MainMenu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &871308350
@@ -9524,8 +9524,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   src: {fileID: 1129720749}
-  sfx1: {fileID: 8300000, guid: a2abce789b7f1a645a6d85e629bf7ee1, type: 3}
-  sfx2: {fileID: 8300000, guid: a37941bddf95830408c8bd6ae447ba96, type: 3}
+  clickSfx: {fileID: 8300000, guid: a2abce789b7f1a645a6d85e629bf7ee1, type: 3}
+  backSfx: {fileID: 8300000, guid: a37941bddf95830408c8bd6ae447ba96, type: 3}
 --- !u!4 &1183179968
 Transform:
   m_ObjectHideFlags: 0
@@ -18397,11 +18397,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4537033211786140090, guid: 1cde7f3be137345488428fefbb08ba2c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Sound1
+      value: PlayClick
       objectReference: {fileID: 0}
     - target: {fileID: 4537033211786140090, guid: 1cde7f3be137345488428fefbb08ba2c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: SoundEffectMenu, Assembly-CSharp
+      value: MenuSFXAndLoad, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4537033211786140090, guid: 1cde7f3be137345488428fefbb08ba2c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -18542,11 +18542,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7391715040671459453, guid: cb2e02c743fe81a48974e6f443fadc0b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Sound1
+      value: PlayClick
       objectReference: {fileID: 0}
     - target: {fileID: 7391715040671459453, guid: cb2e02c743fe81a48974e6f443fadc0b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: SoundEffectMenu, Assembly-CSharp
+      value: MenuSFXAndLoad, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7391715040671459453, guid: cb2e02c743fe81a48974e6f443fadc0b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName

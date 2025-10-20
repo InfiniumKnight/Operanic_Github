@@ -1,19 +1,37 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
-public class SoundEffectMenu : MonoBehaviour
+public class MenuSFXAndLoad : MonoBehaviour
 {
+    [Header("Audio")]
     public AudioSource src;
-    public AudioClip sfx1, sfx2;
+    public AudioClip clickSfx;  
+    public AudioClip backSfx;   
 
-    public void Sound1() //click sound
+    // Loading Scenes Button "Play" "Level Select"
+    public void PlayClickAndLoad(string sceneName)
     {
-        src.clip = sfx1;
-        src.Play();
+        StartCoroutine(PlayThenLoad(clickSfx, sceneName));
     }
 
-    public void Sound2() //exit sound
+    public void PlayBackAndLoad(string sceneName)
     {
-        src.clip = sfx2;
-        src.Play();
+        StartCoroutine(PlayThenLoad(backSfx, sceneName));
     }
+
+    private IEnumerator PlayThenLoad(AudioClip clip, string sceneName)
+    {
+        if (clip != null) src.PlayOneShot(clip);
+
+        // Fallback if clip is null
+        float wait = clip != null ? clip.length : 0f;
+        yield return new WaitForSecondsRealtime(wait);
+
+        SceneManager.LoadScene(sceneName);
+    }
+
+    // Normal Buttons that doesnt load scenes
+    public void PlayClick() { if (clickSfx) src.PlayOneShot(clickSfx); }
+    public void PlayBack()  { if (backSfx)  src.PlayOneShot(backSfx);  }
 }
