@@ -34,7 +34,7 @@ public class SteamPipe : MonoBehaviour
 
     IEnumerator Delay()
     {
-        //audioSource.PlayOneShot(SteamSound);
+        audioSource.PlayOneShot(SteamSound);
         yield return new WaitForSecondsRealtime(BlastDuration);
         SteamHitBox.SetActive(false);
         SincelastBlast = 0;
