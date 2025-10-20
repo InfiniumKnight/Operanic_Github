@@ -10,6 +10,9 @@ TagManager:
   - Box1Goal
   - TempGoalTag
   - MovingBlock
+  - Box2Goal
+  - Box3Goal
+  - Box4Goal
   layers:
   - Default
   - TransparentFX
