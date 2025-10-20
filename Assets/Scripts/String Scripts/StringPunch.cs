@@ -27,7 +27,7 @@ public class StringPunch : MonoBehaviour
             {
                 self.gameObject.GetComponent<MeshRenderer>().material = punchedColor;
                 parent.AddToOrder(self);
-                //PlayTone();
+                PlayTone();
                 CanBePunched = false;
             }
         }

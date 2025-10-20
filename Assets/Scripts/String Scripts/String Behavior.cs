@@ -16,7 +16,7 @@ public class StringBehavior : MonoBehaviour
     [SerializeField] private Material IncorrectColor;
 
     [Header("Audio")]
-    [SerializeField] private AudioSource audioSourc;
+    [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip CorrectSound;
     [SerializeField] private AudioClip IncorrectSound;
 
@@ -54,7 +54,7 @@ public class StringBehavior : MonoBehaviour
 
             if(NumCorrect == CorrectOrder.Count)
             {
-                //audioSource.PlayOneShot(CorrectSound);
+                audioSource.PlayOneShot(CorrectSound);
                 gameManager.PuzzleDone(PuzzleNum);
                 for (int x = 0; x < CorrectOrder.Count; x++)
                 {
@@ -78,7 +78,7 @@ public class StringBehavior : MonoBehaviour
             CorrectOrder[i].gameObject.GetComponent<MeshRenderer>().material = FlashMaterial;
             yield return new WaitForSecondsRealtime(SequencePlaySpeed);
             CorrectOrder[i].gameObject.GetComponent<MeshRenderer>().material = BaseColor;
-            //CorrectOrder[i].gameObject.GetComponent<StringPunch>().PlayTone();
+            CorrectOrder[i].gameObject.GetComponent<StringPunch>().PlayTone();
         }
     }
 
