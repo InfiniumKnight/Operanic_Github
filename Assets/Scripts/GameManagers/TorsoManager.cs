@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TorsoManager : GameManager
 {
+    [SerializeField] GameObject Platforms;
     [SerializeField] GameObject EndZone;
 
 
@@ -12,11 +13,11 @@ public class TorsoManager : GameManager
     {
         if(PuzzleNum == 1)
         {
-            EndZone.SetActive(true);
+            Platforms.SetActive(true);
         }
         else if(PuzzleNum == 2)
         {
-            //Do something else
+            EndZone.SetActive(true);
         }
         //so on and so forth
     }
