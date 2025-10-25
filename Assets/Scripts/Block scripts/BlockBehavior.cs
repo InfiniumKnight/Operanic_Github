@@ -11,11 +11,15 @@ public class BlockBehavior : MonoBehaviour
     [SerializeField] AudioSource audioSource;
     [SerializeField] AudioClip SlideSound;
     [SerializeField] AudioClip ClickIntoPlace;
+    [SerializeField] AudioClip IncorrectSound;
 
     [SerializeField] private string GoalTag;
 
+    [SerializeField] GameObject FallingGear;
+
     [SerializeField] Activation activation;
     private bool canMove = true;
+    private bool canSpawnGear = true;
 
     private void Start()
     {
@@ -48,6 +52,7 @@ public class BlockBehavior : MonoBehaviour
             audioSource.loop = true;
             audioSource.Play();
         }
+        canSpawnGear = true;
         canMove = false;
     }
 
@@ -75,6 +80,18 @@ public class BlockBehavior : MonoBehaviour
                 audioSource.PlayOneShot(ClickIntoPlace);
                 Destroy(rb);
                 canMove = false;
+            }
+            else if (other.gameObject.tag != GoalTag && other.gameObject.tag.Contains("Goal"))
+            {
+                if (canSpawnGear == true)
+                {
+                    //audioSource.PlayOneShot(IncorrectSound);
+                    Vector3 PlayerLocation = GameObject.FindWithTag("Player").transform.position;
+                    Vector3 spawnLocation = new Vector3(PlayerLocation.x, PlayerLocation.y + 10f, PlayerLocation.z);
+                    Instantiate(FallingGear, spawnLocation, Quaternion.identity);
+                    canSpawnGear = false;
+                }
+
             }
         }
     }

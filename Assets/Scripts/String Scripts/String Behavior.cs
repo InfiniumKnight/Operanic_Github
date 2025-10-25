@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class StringBehavior : MonoBehaviour
-{ 
+{
     [Header("GameObjectArrays")]
     [SerializeField] private List<GameObject> CorrectOrder;
     [SerializeField] private List<GameObject> InputedOrder;
     [SerializeField] private int NumHitsRegistered;
+
+    [Header("Hazard Objects")]
+    [SerializeField] GameObject HitboxOne;
+    [SerializeField] GameObject HitboxTwo;
 
     [Header("Materials")]
     [SerializeField] private Material BaseColor;
@@ -29,7 +33,7 @@ public class StringBehavior : MonoBehaviour
 
     private void Update()
     {
-        if ( NumHitsRegistered >= CorrectOrder.Count)
+        if (NumHitsRegistered >= CorrectOrder.Count)
         {
             for (int b = 0; b < CorrectOrder.Count; b++)
             {
@@ -41,6 +45,7 @@ public class StringBehavior : MonoBehaviour
                         CorrectOrder[x].gameObject.GetComponent<MeshRenderer>().material = IncorrectColor;
                         StartCoroutine(Delay2());
                     }
+                    Penalty();
                     NumHitsRegistered = 0;
                     NumCorrect = 0;
                     InputedOrder.Clear();
@@ -52,7 +57,7 @@ public class StringBehavior : MonoBehaviour
                 }
             }
 
-            if(NumCorrect == CorrectOrder.Count)
+            if (NumCorrect == CorrectOrder.Count)
             {
                 audioSource.PlayOneShot(CorrectSound);
                 gameManager.PuzzleDone(PuzzleNum);
@@ -60,7 +65,7 @@ public class StringBehavior : MonoBehaviour
                 {
                     CorrectOrder[x].gameObject.GetComponent<MeshRenderer>().material = CorrectColor;
                     NumHitsRegistered = 0;
-                    
+
                 }
             }
 
@@ -79,7 +84,7 @@ public class StringBehavior : MonoBehaviour
             CorrectOrder[i].gameObject.GetComponent<StringPunch>().PlayTone();
             yield return new WaitForSecondsRealtime(SequencePlaySpeed);
             CorrectOrder[i].gameObject.GetComponent<MeshRenderer>().material = BaseColor;
-            
+
         }
     }
 
@@ -97,5 +102,14 @@ public class StringBehavior : MonoBehaviour
             CorrectOrder[x].gameObject.GetComponent<MeshRenderer>().material = BaseColor;
             CorrectOrder[x].gameObject.GetComponent<StringPunch>().CanBePunched = true;
         }
+    }
+
+    private void Penalty()
+    {
+        HitboxOne.SetActive(true);
+        HitboxTwo.SetActive(true);
+
+        HitboxOne.GetComponent<StringHitBoxBehavior>().Go(1);
+        HitboxTwo.GetComponent<StringHitBoxBehavior>().Go(-1);
     }
 }
