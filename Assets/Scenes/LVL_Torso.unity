@@ -2114,6 +2114,8 @@ MonoBehaviour:
   - {fileID: 789168289}
   InputedOrder: []
   NumHitsRegistered: 0
+  HitboxOne: {fileID: 0}
+  HitboxTwo: {fileID: 0}
   BaseColor: {fileID: 2100000, guid: d32aa50b02b24fa4fa0750cdf6c6b5e0, type: 2}
   FlashMaterial: {fileID: 2100000, guid: 27483c2e57a0bdd4985cdc89681f323b, type: 2}
   CorrectColor: {fileID: 2100000, guid: 8a11a2f691ead8f468c38373cd3e1268, type: 2}
@@ -3679,6 +3681,8 @@ MonoBehaviour:
   - {fileID: 1441369882}
   InputedOrder: []
   NumHitsRegistered: 0
+  HitboxOne: {fileID: 0}
+  HitboxTwo: {fileID: 0}
   BaseColor: {fileID: 2100000, guid: d32aa50b02b24fa4fa0750cdf6c6b5e0, type: 2}
   FlashMaterial: {fileID: 2100000, guid: 27483c2e57a0bdd4985cdc89681f323b, type: 2}
   CorrectColor: {fileID: 2100000, guid: 8a11a2f691ead8f468c38373cd3e1268, type: 2}
@@ -5675,7 +5679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 579848398361394696, guid: 1cde7f3be137345488428fefbb08ba2c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2993840537836379036, guid: 1cde7f3be137345488428fefbb08ba2c, type: 3}
       propertyPath: m_Pivot.x
@@ -7356,7 +7360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5773348944398048022, guid: cb2e02c743fe81a48974e6f443fadc0b, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7391715040671459453, guid: cb2e02c743fe81a48974e6f443fadc0b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
