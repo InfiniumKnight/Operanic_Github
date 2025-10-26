@@ -8,14 +8,23 @@ public class BlockBehavior : MonoBehaviour
     [SerializeField] private float SlideSpeed = 30f;
     [SerializeField] private Rigidbody rb;
 
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip SlideSound;
+    [SerializeField] AudioClip ClickIntoPlace;
+    [SerializeField] AudioClip IncorrectSound;
+
     [SerializeField] private string GoalTag;
+
+    [SerializeField] GameObject FallingGear;
 
     [SerializeField] Activation activation;
     private bool canMove = true;
+    private bool canSpawnGear = true;
 
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
 
     public void Punched(int direction)
@@ -39,7 +48,11 @@ public class BlockBehavior : MonoBehaviour
             {
                 rb.velocity = new Vector3(1 * SlideSpeed * Time.deltaTime, 0, 0);
             }
+            audioSource.clip = SlideSound;
+            audioSource.loop = true;
+            audioSource.Play();
         }
+        canSpawnGear = true;
         canMove = false;
     }
 
@@ -48,6 +61,9 @@ public class BlockBehavior : MonoBehaviour
         if(other.gameObject.tag == "Wall")
         {
             Debug.Log("Hit Wall");
+            audioSource.Stop();
+            audioSource.loop = false;
+            audioSource.clip = null;
             rb.velocity = new Vector3(0,0,0);
             canMove = true;
         }
@@ -61,8 +77,21 @@ public class BlockBehavior : MonoBehaviour
             {
                 activation.Activate();
                 Debug.Log("reachGoal");
+                audioSource.PlayOneShot(ClickIntoPlace);
                 Destroy(rb);
                 canMove = false;
+            }
+            else if (other.gameObject.tag != GoalTag && other.gameObject.tag.Contains("Goal"))
+            {
+                if (canSpawnGear == true)
+                {
+                    //audioSource.PlayOneShot(IncorrectSound);
+                    Vector3 PlayerLocation = GameObject.FindWithTag("Player").transform.position;
+                    Vector3 spawnLocation = new Vector3(PlayerLocation.x, PlayerLocation.y + 10f, PlayerLocation.z);
+                    Instantiate(FallingGear, spawnLocation, Quaternion.identity);
+                    canSpawnGear = false;
+                }
+
             }
         }
     }

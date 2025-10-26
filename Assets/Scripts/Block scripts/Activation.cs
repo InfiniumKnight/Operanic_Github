@@ -5,6 +5,8 @@ using UnityEngine;
 public class Activation : MonoBehaviour
 {
     [SerializeField] private int numOfActivationsNeeded = 1;
+    [SerializeField] private int PuzzleNum;
+    [SerializeField] private GameManager gameManager;
     private int numOfActivationsAchieved;
 
     public void Activate()
@@ -12,7 +14,8 @@ public class Activation : MonoBehaviour
         numOfActivationsAchieved++;
         if (numOfActivationsAchieved >= numOfActivationsNeeded)
         {
-            gameObject.transform.position = new Vector3(21.5f, 53.35f, 39.44f);
+            Debug.Log("Disabling Puzzle 1 wall");
+            gameManager.PuzzleDone(PuzzleNum);
         }
     }
 }

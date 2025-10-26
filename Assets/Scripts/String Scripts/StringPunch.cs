@@ -7,6 +7,9 @@ public class StringPunch : MonoBehaviour
     [SerializeField] StringBehavior parent;
     [SerializeField] GameObject self;
     [SerializeField] Material punchedColor;
+    [SerializeField] AudioSource audioSource;
+    [SerializeField] AudioClip StringTone;
+
     public int StringNum;
 
     public bool CanBePunched = true;
@@ -14,14 +17,24 @@ public class StringPunch : MonoBehaviour
     private void Start()
     {
         self = gameObject;
+        audioSource = gameObject.GetComponent<AudioSource>();
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "PunchBox")
+        if (CanBePunched == true)
         {
-            self.gameObject.GetComponent<MeshRenderer>().material = punchedColor;
-            parent.AddToOrder(self);
-            CanBePunched = false;
+            if (other.gameObject.tag == "PunchBox")
+            {
+                self.gameObject.GetComponent<MeshRenderer>().material = punchedColor;
+                parent.AddToOrder(self);
+                PlayTone();
+                CanBePunched = false;
+            }
         }
+    }
+
+    public void PlayTone()
+    {
+        audioSource.PlayOneShot(StringTone);
     }
 }

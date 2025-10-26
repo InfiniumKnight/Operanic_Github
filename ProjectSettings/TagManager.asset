@@ -8,7 +8,11 @@ TagManager:
   - Wall
   - PunchBox
   - Box1Goal
-  - FlickeringLight
+  - TempGoalTag
+  - MovingBlock
+  - Box2Goal
+  - Box3Goal
+  - Box4Goal
   layers:
   - Default
   - TransparentFX

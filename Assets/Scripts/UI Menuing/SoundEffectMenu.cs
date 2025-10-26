@@ -1,37 +1,19 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using System.Collections;
 
-public class MenuSFXAndLoad : MonoBehaviour
+public class SoundEffectMenu : MonoBehaviour
 {
     public AudioSource src;
-    public AudioClip clickSfx;
-    public AudioClip backSfx;
-    public float sceneLoadDelay = .5f; // Loading Scene Delay
+    public AudioClip sfx1, sfx2;
 
-    public void PlayClickAndLoad(string sceneName)
+    public void Sound1() //click sound
     {
-        StartCoroutine(PlayThenLoad(clickSfx, sceneName));
+        src.clip = sfx1;
+        src.Play();
     }
 
-    public void PlayBackAndLoad(string sceneName)
+    public void Sound2() //exit sound
     {
-        StartCoroutine(PlayThenLoad(backSfx, sceneName));
+        src.clip = sfx2;
+        src.Play();
     }
-
-    private IEnumerator PlayThenLoad(AudioClip clip, string sceneName)
-    {
-        if (clip != null)
-            src.PlayOneShot(clip);
-
-        // Wait timer before loading scene
-        yield return new WaitForSecondsRealtime(sceneLoadDelay);
-
-        SceneManager.LoadScene(sceneName);
-    }
-
-    // Sound for regular buttons
-    public void PlayClick() { if (clickSfx) src.PlayOneShot(clickSfx); }
-    public void PlayBack()  { if (backSfx)  src.PlayOneShot(backSfx); }
 }
-
