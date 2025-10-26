@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 49655146}
   - component: {fileID: 49655145}
   - component: {fileID: 49655144}
+  - component: {fileID: 49655148}
   - component: {fileID: 49655143}
   m_Layer: 0
   m_Name: HixboxOne
@@ -374,6 +375,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 847255066}
   m_LocalEulerAnglesHint: {x: 0, y: -95.075, z: 0}
+--- !u!114 &49655148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49655142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501dbe879e6290b438cd0a0d3b6ad399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &54875400
 GameObject:
   m_ObjectHideFlags: 0
@@ -10124,6 +10137,7 @@ GameObject:
   - component: {fileID: 1506390397}
   - component: {fileID: 1506390396}
   - component: {fileID: 1506390395}
+  - component: {fileID: 1506390399}
   - component: {fileID: 1506390394}
   m_Layer: 0
   m_Name: HixboxTwo
@@ -10231,6 +10245,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 847255066}
   m_LocalEulerAnglesHint: {x: 0, y: -4.076, z: 0}
+--- !u!114 &1506390399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1506390393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501dbe879e6290b438cd0a0d3b6ad399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1511371177
 GameObject:
   m_ObjectHideFlags: 0
@@ -11730,7 +11756,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Platforms: {fileID: 636025200}
-  Platforms2: {fileID: 1830482105}
   EndZone: {fileID: 982943002}
 --- !u!4 &1822803137
 Transform:

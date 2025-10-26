@@ -1527,7 +1527,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b18dd97f740081f409f8a52d4acb918f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.052
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1536,9 +1536,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Pan2D: 1
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -2742,8 +2742,8 @@ MonoBehaviour:
   SteamHitBox: {fileID: 820623391}
   audioSource: {fileID: 240489952}
   SteamSound: {fileID: 8300000, guid: b18dd97f740081f409f8a52d4acb918f, type: 3}
-  DelayBetweenBlasts: 3
-  BlastDuration: 1.5
+  DelayBetweenBlasts: 6
+  BlastDuration: 4
 --- !u!114 &315865962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2760,7 +2760,7 @@ MonoBehaviour:
   audioSource: {fileID: 240489952}
   SteamSound: {fileID: 8300000, guid: b18dd97f740081f409f8a52d4acb918f, type: 3}
   DelayBetweenBlasts: 5
-  BlastDuration: 2
+  BlastDuration: 3
 --- !u!1 &322012260 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e5f64e0a7b07abb4dbaee9feb1faea1f, type: 3}
@@ -3150,7 +3150,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b18dd97f740081f409f8a52d4acb918f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.052
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3159,9 +3159,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -3246,7 +3246,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b18dd97f740081f409f8a52d4acb918f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.052
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3255,9 +3255,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -4070,7 +4070,7 @@ MonoBehaviour:
   ClickIntoPlace: {fileID: 8300000, guid: ccb1b1163a1fa1d4c9fb4a28f94441ca, type: 3}
   IncorrectSound: {fileID: 0}
   GoalTag: Box3Goal
-  FallingGear: {fileID: 0}
+  FallingGear: {fileID: 2843035694689735084, guid: aa323109a2fb143459a7d31d75c6748c, type: 3}
   activation: {fileID: 1711954653}
 --- !u!54 &522016659
 Rigidbody:
@@ -6954,7 +6954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5299146926960630741, guid: 57970c6bb711ec24b8d98424b1806f3b, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5299146926960630741, guid: 57970c6bb711ec24b8d98424b1806f3b, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
@@ -8660,7 +8660,7 @@ MonoBehaviour:
   ClickIntoPlace: {fileID: 8300000, guid: ccb1b1163a1fa1d4c9fb4a28f94441ca, type: 3}
   IncorrectSound: {fileID: 0}
   GoalTag: Box4Goal
-  FallingGear: {fileID: 0}
+  FallingGear: {fileID: 2843035694689735084, guid: aa323109a2fb143459a7d31d75c6748c, type: 3}
   activation: {fileID: 1711954653}
 --- !u!54 &1007065426
 Rigidbody:
@@ -10193,7 +10193,7 @@ MonoBehaviour:
   SteamHitBox: {fileID: 2007545241}
   audioSource: {fileID: 240489952}
   SteamSound: {fileID: 8300000, guid: b18dd97f740081f409f8a52d4acb918f, type: 3}
-  DelayBetweenBlasts: 1
+  DelayBetweenBlasts: 5
   BlastDuration: 3
 --- !u!82 &1107827478
 AudioSource:
@@ -10207,7 +10207,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b18dd97f740081f409f8a52d4acb918f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.052
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -10216,9 +10216,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -13338,6 +13338,10 @@ PrefabInstance:
       value: 2.15
       objectReference: {fileID: 0}
     - target: {fileID: 5299146926960630741, guid: 57970c6bb711ec24b8d98424b1806f3b, type: 3}
+      propertyPath: simulationSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5299146926960630741, guid: 57970c6bb711ec24b8d98424b1806f3b, type: 3}
       propertyPath: ShapeModule.angle
       value: 9.34
       objectReference: {fileID: 0}
@@ -13504,7 +13508,7 @@ MonoBehaviour:
   ClickIntoPlace: {fileID: 8300000, guid: ccb1b1163a1fa1d4c9fb4a28f94441ca, type: 3}
   IncorrectSound: {fileID: 0}
   GoalTag: Box2Goal
-  FallingGear: {fileID: 0}
+  FallingGear: {fileID: 2843035694689735084, guid: aa323109a2fb143459a7d31d75c6748c, type: 3}
   activation: {fileID: 1711954653}
 --- !u!54 &1433302261
 Rigidbody:
@@ -14067,7 +14071,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5299146926960630741, guid: 57970c6bb711ec24b8d98424b1806f3b, type: 3}
       propertyPath: lengthInSec
-      value: 2.4
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5299146926960630741, guid: 57970c6bb711ec24b8d98424b1806f3b, type: 3}
+      propertyPath: simulationSpeed
+      value: 0.55
       objectReference: {fileID: 0}
     - target: {fileID: 5299146926960630741, guid: 57970c6bb711ec24b8d98424b1806f3b, type: 3}
       propertyPath: ShapeModule.angle
@@ -17491,8 +17499,8 @@ MonoBehaviour:
   SteamHitBox: {fileID: 2143959394}
   audioSource: {fileID: 240489952}
   SteamSound: {fileID: 8300000, guid: b18dd97f740081f409f8a52d4acb918f, type: 3}
-  DelayBetweenBlasts: 3
-  BlastDuration: 1
+  DelayBetweenBlasts: 7
+  BlastDuration: 5
 --- !u!114 &1793610679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17508,8 +17516,8 @@ MonoBehaviour:
   SteamHitBox: {fileID: 1177133123}
   audioSource: {fileID: 240489952}
   SteamSound: {fileID: 8300000, guid: b18dd97f740081f409f8a52d4acb918f, type: 3}
-  DelayBetweenBlasts: 3
-  BlastDuration: 1
+  DelayBetweenBlasts: 5
+  BlastDuration: 3
 --- !u!82 &1793610684
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17522,7 +17530,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b18dd97f740081f409f8a52d4acb918f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.052
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -17531,9 +17539,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -17618,7 +17626,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b18dd97f740081f409f8a52d4acb918f, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.052
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -17627,9 +17635,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 10
   Pan2D: 1
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -19183,6 +19191,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5299146926960630741, guid: 57970c6bb711ec24b8d98424b1806f3b, type: 3}
+      propertyPath: simulationSpeed
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5299146926960630741, guid: 57970c6bb711ec24b8d98424b1806f3b, type: 3}
       propertyPath: ShapeModule.angle
       value: 9.34
       objectReference: {fileID: 0}
@@ -19216,7 +19228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5299146926960630741, guid: 57970c6bb711ec24b8d98424b1806f3b, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5299146926960630741, guid: 57970c6bb711ec24b8d98424b1806f3b, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
@@ -20709,6 +20721,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5299146926960630741, guid: 57970c6bb711ec24b8d98424b1806f3b, type: 3}
+      propertyPath: simulationSpeed
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5299146926960630741, guid: 57970c6bb711ec24b8d98424b1806f3b, type: 3}
       propertyPath: ShapeModule.angle
       value: 9.34
       objectReference: {fileID: 0}
@@ -20742,7 +20758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5299146926960630741, guid: 57970c6bb711ec24b8d98424b1806f3b, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5299146926960630741, guid: 57970c6bb711ec24b8d98424b1806f3b, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
@@ -21674,7 +21690,7 @@ MonoBehaviour:
   ClickIntoPlace: {fileID: 8300000, guid: ccb1b1163a1fa1d4c9fb4a28f94441ca, type: 3}
   IncorrectSound: {fileID: 0}
   GoalTag: Box1Goal
-  FallingGear: {fileID: 0}
+  FallingGear: {fileID: 2843035694689735084, guid: aa323109a2fb143459a7d31d75c6748c, type: 3}
   activation: {fileID: 579939683}
 --- !u!54 &2130676479
 Rigidbody:
