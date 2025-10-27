@@ -304,7 +304,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1847,6 +1847,7 @@ GameObject:
   - component: {fileID: 276381353}
   - component: {fileID: 276381352}
   - component: {fileID: 276381351}
+  - component: {fileID: 276381356}
   m_Layer: 0
   m_Name: HixboxTwo
   m_TagString: Untagged
@@ -1882,7 +1883,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1953,6 +1954,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 776421496}
   m_LocalEulerAnglesHint: {x: 0, y: -4.076, z: 0}
+--- !u!114 &276381356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276381350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501dbe879e6290b438cd0a0d3b6ad399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &280170786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4725,7 +4738,7 @@ Transform:
   m_GameObject: {fileID: 736592114}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.14, y: 25.5, z: 14.2}
+  m_LocalPosition: {x: -0.14, y: 25.34, z: 13.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9020,6 +9033,7 @@ GameObject:
   - component: {fileID: 1340825693}
   - component: {fileID: 1340825692}
   - component: {fileID: 1340825691}
+  - component: {fileID: 1340825695}
   m_Layer: 0
   m_Name: HixboxOne
   m_TagString: Untagged
@@ -9070,7 +9084,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9126,6 +9140,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340825689}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1340825695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340825689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501dbe879e6290b438cd0a0d3b6ad399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1355372944
 GameObject:
   m_ObjectHideFlags: 0
@@ -10092,7 +10118,7 @@ Transform:
   m_GameObject: {fileID: 1482882187}
   serializedVersion: 2
   m_LocalRotation: {x: 0.37139067, y: 0.000000018207187, z: -0.0000000072828743, w: 0.92847675}
-  m_LocalPosition: {x: -0.14, y: 37.7, z: 1.3899994}
+  m_LocalPosition: {x: -0.14, y: 37.54, z: 0.9899998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10174,7 +10200,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10985,6 +11011,7 @@ GameObject:
   - component: {fileID: 1660662012}
   - component: {fileID: 1660662011}
   - component: {fileID: 1660662010}
+  - component: {fileID: 1660662015}
   m_Layer: 0
   m_Name: HixboxOne
   m_TagString: Untagged
@@ -11020,7 +11047,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11091,6 +11118,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 776421496}
   m_LocalEulerAnglesHint: {x: 0, y: -95.075, z: 0}
+--- !u!114 &1660662015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660662009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501dbe879e6290b438cd0a0d3b6ad399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1669505880
 GameObject:
   m_ObjectHideFlags: 0
@@ -11212,7 +11251,7 @@ Transform:
   m_GameObject: {fileID: 1669505880}
   serializedVersion: 2
   m_LocalRotation: {x: 0.3713907, y: 0.00000001820719, z: -0.000000007282877, w: 0.9284767}
-  m_LocalPosition: {x: -0.14, y: 37.7, z: 1.3899994}
+  m_LocalPosition: {x: -0.14, y: 37.54, z: 0.9899998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11756,6 +11795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Platforms: {fileID: 636025200}
+  Platforms2: {fileID: 1830482105}
   EndZone: {fileID: 982943002}
 --- !u!4 &1822803137
 Transform:
@@ -11785,6 +11825,7 @@ GameObject:
   - component: {fileID: 1824040346}
   - component: {fileID: 1824040345}
   - component: {fileID: 1824040344}
+  - component: {fileID: 1824040348}
   m_Layer: 0
   m_Name: HixboxTwo
   m_TagString: Untagged
@@ -11835,7 +11876,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11891,6 +11932,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824040342}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1824040348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824040342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501dbe879e6290b438cd0a0d3b6ad399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1825063936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12047,7 +12100,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1830482106
 Transform:
   m_ObjectHideFlags: 0
@@ -12730,7 +12783,7 @@ SceneRoots:
   - {fileID: 653797856}
   - {fileID: 992159572}
   - {fileID: 544111924}
-  - {fileID: 1112864783}
   - {fileID: 1355372945}
   - {fileID: 1031366218}
   - {fileID: 776421496}
+  - {fileID: 1112864783}
