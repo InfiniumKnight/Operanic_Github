@@ -304,7 +304,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1847,6 +1847,7 @@ GameObject:
   - component: {fileID: 276381353}
   - component: {fileID: 276381352}
   - component: {fileID: 276381351}
+  - component: {fileID: 276381356}
   m_Layer: 0
   m_Name: HixboxTwo
   m_TagString: Untagged
@@ -1882,7 +1883,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1953,6 +1954,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 776421496}
   m_LocalEulerAnglesHint: {x: 0, y: -4.076, z: 0}
+--- !u!114 &276381356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276381350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501dbe879e6290b438cd0a0d3b6ad399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &280170786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2191,8 +2204,8 @@ MonoBehaviour:
   self: {fileID: 0}
   punchedColor: {fileID: 2100000, guid: 27483c2e57a0bdd4985cdc89681f323b, type: 2}
   audioSource: {fileID: 0}
-  StringTone: {fileID: 8300000, guid: fc10c8098710f3b48873d5513c1a80aa, type: 3}
-  StringNum: 1
+  StringTone: {fileID: 8300000, guid: 7b594b13a9d020a43908dd786c1b1341, type: 3}
+  StringNum: 9
   CanBePunched: 1
 --- !u!136 &297976215
 CapsuleCollider:
@@ -2940,13 +2953,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 360243517}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.038293716, y: 0.7060691, z: 0.7060691, w: 0.038293723}
-  m_LocalPosition: {x: 207.11017, y: -75.2978, z: -0.000000085472}
+  m_LocalRotation: {x: 0.70710677, y: 0, z: 0, w: 0.70710677}
+  m_LocalPosition: {x: 206.96202, y: -10.6, z: -0.000000085472}
   m_LocalScale: {x: 1042.5682, y: 440.84, z: 128.28998}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -83.791, y: -90, z: 90}
+  m_LocalEulerAnglesHint: {x: 90, y: 90, z: 90}
 --- !u!1 &384886459
 GameObject:
   m_ObjectHideFlags: 0
@@ -3323,8 +3336,8 @@ MonoBehaviour:
   self: {fileID: 0}
   punchedColor: {fileID: 2100000, guid: 27483c2e57a0bdd4985cdc89681f323b, type: 2}
   audioSource: {fileID: 0}
-  StringTone: {fileID: 0}
-  StringNum: 6
+  StringTone: {fileID: 8300000, guid: 572d4b3e04863df4882d0d3d6e63802c, type: 3}
+  StringNum: 7
   CanBePunched: 1
 --- !u!136 &510087083
 CapsuleCollider:
@@ -3686,7 +3699,6 @@ Transform:
   - {fileID: 915764915}
   - {fileID: 789168295}
   - {fileID: 1372964909}
-  - {fileID: 1830482106}
   - {fileID: 1340825690}
   - {fileID: 1824040343}
   m_Father: {fileID: 0}
@@ -4232,8 +4244,8 @@ MonoBehaviour:
   self: {fileID: 0}
   punchedColor: {fileID: 2100000, guid: 27483c2e57a0bdd4985cdc89681f323b, type: 2}
   audioSource: {fileID: 0}
-  StringTone: {fileID: 0}
-  StringNum: 6
+  StringTone: {fileID: 8300000, guid: dc2436f28fe968f47a657d030fa5a925, type: 3}
+  StringNum: 8
   CanBePunched: 1
 --- !u!136 &659839939
 CapsuleCollider:
@@ -4725,7 +4737,7 @@ Transform:
   m_GameObject: {fileID: 736592114}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.14, y: 25.5, z: 14.2}
+  m_LocalPosition: {x: -0.14, y: 25.48, z: 9.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5377,7 +5389,7 @@ MonoBehaviour:
   self: {fileID: 0}
   punchedColor: {fileID: 2100000, guid: 27483c2e57a0bdd4985cdc89681f323b, type: 2}
   audioSource: {fileID: 0}
-  StringTone: {fileID: 0}
+  StringTone: {fileID: 8300000, guid: 6d10296e6eb26d94fbef9ebdbb2b69a1, type: 3}
   StringNum: 6
   CanBePunched: 1
 --- !u!136 &789168292
@@ -5627,7 +5639,7 @@ MonoBehaviour:
   self: {fileID: 0}
   punchedColor: {fileID: 2100000, guid: 27483c2e57a0bdd4985cdc89681f323b, type: 2}
   audioSource: {fileID: 0}
-  StringTone: {fileID: 0}
+  StringTone: {fileID: 8300000, guid: 87a38dfc7969fd74e9db2dd76e7a6326, type: 3}
   StringNum: 5
   CanBePunched: 1
 --- !u!136 &833830096
@@ -6217,7 +6229,7 @@ MonoBehaviour:
   self: {fileID: 0}
   punchedColor: {fileID: 2100000, guid: 27483c2e57a0bdd4985cdc89681f323b, type: 2}
   audioSource: {fileID: 0}
-  StringTone: {fileID: 0}
+  StringTone: {fileID: 8300000, guid: 6d10296e6eb26d94fbef9ebdbb2b69a1, type: 3}
   StringNum: 6
   CanBePunched: 1
 --- !u!136 &884796356
@@ -6441,7 +6453,7 @@ MonoBehaviour:
   self: {fileID: 0}
   punchedColor: {fileID: 2100000, guid: 27483c2e57a0bdd4985cdc89681f323b, type: 2}
   audioSource: {fileID: 0}
-  StringTone: {fileID: 0}
+  StringTone: {fileID: 8300000, guid: 87a38dfc7969fd74e9db2dd76e7a6326, type: 3}
   StringNum: 5
   CanBePunched: 1
 --- !u!136 &915764912
@@ -7597,8 +7609,8 @@ MonoBehaviour:
   self: {fileID: 0}
   punchedColor: {fileID: 2100000, guid: 27483c2e57a0bdd4985cdc89681f323b, type: 2}
   audioSource: {fileID: 0}
-  StringTone: {fileID: 8300000, guid: fc10c8098710f3b48873d5513c1a80aa, type: 3}
-  StringNum: 1
+  StringTone: {fileID: 8300000, guid: c37a28ff2cc5b9f4897b4ad5851bced4, type: 3}
+  StringNum: 10
   CanBePunched: 1
 --- !u!136 &1015209574
 CapsuleCollider:
@@ -9020,6 +9032,7 @@ GameObject:
   - component: {fileID: 1340825693}
   - component: {fileID: 1340825692}
   - component: {fileID: 1340825691}
+  - component: {fileID: 1340825695}
   m_Layer: 0
   m_Name: HixboxOne
   m_TagString: Untagged
@@ -9070,7 +9083,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -9126,6 +9139,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340825689}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1340825695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340825689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501dbe879e6290b438cd0a0d3b6ad399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1355372944
 GameObject:
   m_ObjectHideFlags: 0
@@ -10092,7 +10117,7 @@ Transform:
   m_GameObject: {fileID: 1482882187}
   serializedVersion: 2
   m_LocalRotation: {x: 0.37139067, y: 0.000000018207187, z: -0.0000000072828743, w: 0.92847675}
-  m_LocalPosition: {x: -0.14, y: 37.7, z: 1.3899994}
+  m_LocalPosition: {x: -0.14, y: 37.68, z: -3.1900005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10174,7 +10199,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10985,6 +11010,7 @@ GameObject:
   - component: {fileID: 1660662012}
   - component: {fileID: 1660662011}
   - component: {fileID: 1660662010}
+  - component: {fileID: 1660662015}
   m_Layer: 0
   m_Name: HixboxOne
   m_TagString: Untagged
@@ -11020,7 +11046,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11091,6 +11117,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 776421496}
   m_LocalEulerAnglesHint: {x: 0, y: -95.075, z: 0}
+--- !u!114 &1660662015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660662009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501dbe879e6290b438cd0a0d3b6ad399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1669505880
 GameObject:
   m_ObjectHideFlags: 0
@@ -11212,7 +11250,7 @@ Transform:
   m_GameObject: {fileID: 1669505880}
   serializedVersion: 2
   m_LocalRotation: {x: 0.3713907, y: 0.00000001820719, z: -0.000000007282877, w: 0.9284767}
-  m_LocalPosition: {x: -0.14, y: 37.7, z: 1.3899994}
+  m_LocalPosition: {x: -0.14, y: 37.68, z: -3.1900005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11756,6 +11794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Platforms: {fileID: 636025200}
+  Platforms2: {fileID: 1830482105}
   EndZone: {fileID: 982943002}
 --- !u!4 &1822803137
 Transform:
@@ -11785,6 +11824,7 @@ GameObject:
   - component: {fileID: 1824040346}
   - component: {fileID: 1824040345}
   - component: {fileID: 1824040344}
+  - component: {fileID: 1824040348}
   m_Layer: 0
   m_Name: HixboxTwo
   m_TagString: Untagged
@@ -11835,7 +11875,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -11891,6 +11931,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1824040342}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1824040348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824040342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501dbe879e6290b438cd0a0d3b6ad399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1825063936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12056,9 +12108,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830482105}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.6755903, z: -0, w: -0.73727727}
-  m_LocalPosition: {x: 4.7383943, y: -20.265106, z: 0.33025032}
-  m_LocalScale: {x: 0.43771338, y: 0.43771338, z: 0.43771338}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.69186926, y: 92.73234, z: 34.0499}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1385932339}
@@ -12075,7 +12127,7 @@ Transform:
   - {fileID: 1785315604}
   - {fileID: 412243923}
   - {fileID: 921128533}
-  m_Father: {fileID: 544111924}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1838020228
 GameObject:
@@ -12729,8 +12781,9 @@ SceneRoots:
   - {fileID: 636025201}
   - {fileID: 653797856}
   - {fileID: 992159572}
+  - {fileID: 1830482106}
   - {fileID: 544111924}
-  - {fileID: 1112864783}
   - {fileID: 1355372945}
   - {fileID: 1031366218}
   - {fileID: 776421496}
+  - {fileID: 1112864783}

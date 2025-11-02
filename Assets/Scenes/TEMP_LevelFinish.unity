@@ -545,6 +545,11 @@ MonoBehaviour:
   UI_Pause: {fileID: 0}
   UI_InGame: {fileID: 0}
   isPaused: 0
+  audioSource: {fileID: 0}
+  clickSound: {fileID: 0}
+  backSound: {fileID: 0}
+  pauseSound: {fileID: 0}
+  Volume: 50
 --- !u!114 &2086143935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -742,6 +747,10 @@ PrefabInstance:
     - target: {fileID: 7244307303070083156, guid: d4fd3feeb7386f241a3c9d90c8ffd56a, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 7866134915498613299, guid: d4fd3feeb7386f241a3c9d90c8ffd56a, type: 3}
+      propertyPath: m_text
+      value: 'Level: Finished'
       objectReference: {fileID: 0}
     - target: {fileID: 7890005874696868371, guid: d4fd3feeb7386f241a3c9d90c8ffd56a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

@@ -11732,7 +11732,7 @@ Transform:
   m_GameObject: {fileID: 1245584063}
   serializedVersion: 2
   m_LocalRotation: {x: 0.37139067, y: 0.00000008186835, z: -0.000000032747337, w: 0.92847675}
-  m_LocalPosition: {x: -19.71, y: 13.17, z: -12.7300005}
+  m_LocalPosition: {x: -19.81, y: 13.58, z: -12.7300005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15193,7 +15193,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1639530045}
   - component: {fileID: 1639530044}
-  - component: {fileID: 1639530043}
   - component: {fileID: 1639530042}
   m_Layer: 0
   m_Name: Main Camera
@@ -15236,14 +15235,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!81 &1639530043
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1639530041}
-  m_Enabled: 1
 --- !u!20 &1639530044
 Camera:
   m_ObjectHideFlags: 0
@@ -15304,7 +15295,7 @@ Transform:
   m_GameObject: {fileID: 1639530041}
   serializedVersion: 2
   m_LocalRotation: {x: 0.37139067, y: 0.00000008186835, z: -0.000000032747337, w: 0.92847675}
-  m_LocalPosition: {x: -19.71, y: 13.17, z: -12.7300005}
+  m_LocalPosition: {x: -19.81, y: 13.58, z: -12.7300005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22140,6 +22131,7 @@ GameObject:
   - component: {fileID: 2138553068}
   - component: {fileID: 2138553067}
   - component: {fileID: 2138553074}
+  - component: {fileID: 2138553075}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -22309,7 +22301,7 @@ Transform:
   m_GameObject: {fileID: 2138553066}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -19.71, y: 0.97, z: 0.08}
+  m_LocalPosition: {x: -19.81, y: 1.38, z: 0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -22413,6 +22405,14 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!81 &2138553075
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138553066}
+  m_Enabled: 0
 --- !u!1 &2143959394
 GameObject:
   m_ObjectHideFlags: 0
