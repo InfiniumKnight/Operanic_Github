@@ -23,6 +23,7 @@ public class StringBehavior : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip CorrectSound;
     [SerializeField] private AudioClip IncorrectSound;
+    [SerializeField] private AudioSource BackgroundLayer;
 
     [Header("General Variables")]
     [SerializeField] private float SequencePlaySpeed;
@@ -65,6 +66,7 @@ public class StringBehavior : MonoBehaviour
                 {
                     CorrectOrder[x].gameObject.GetComponent<MeshRenderer>().material = CorrectColor;
                     NumHitsRegistered = 0;
+                    BackgroundLayer.volume = .5f;
 
                 }
             }
