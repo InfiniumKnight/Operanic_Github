@@ -13,7 +13,7 @@ public class Activation : MonoBehaviour
 
     public void Activate()
     {
-        backgroundSources[BackgroundIndex].volume = .75f;
+        backgroundSources[BackgroundIndex].volume = .30f;
         BackgroundIndex++;
         numOfActivationsAchieved++;
         if (numOfActivationsAchieved >= numOfActivationsNeeded)
