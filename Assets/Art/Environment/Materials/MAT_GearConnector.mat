@@ -7,13 +7,14 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: testmat
-  m_Shader: {fileID: 4800000, guid: e344358da9bef1244bc7610597f116f6, type: 3}
+  m_Name: MAT_GearConnector
+  m_Shader: {fileID: 4800000, guid: b9e572a27568d9f4290afb02eef356bc, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _ALPHATOCOVERAGE_OFF
+  - _ALPHATOCOVERAGE_ON
   - _BLENDALPHADESTINATION_ZERO
   - _BLENDALPHASOURCE_ONE
   - _BLENDOPALPHA_ADD
@@ -21,12 +22,14 @@ Material:
   - _BLENDRGBDESTINATION_ZERO
   - _BLENDRGBSOURCE_ONE
   - _CULLMODE_BACK
-  - _OUTLINEENABLED
+  - _CULLMODE_FRONT
+  - _CULLMODE_OFF
   - _STENCILBUFFERCOMPARISON_DISABLED
   - _STENCILBUFFERFAILFRONT_KEEP
   - _STENCILBUFFERPASSFRONT_KEEP
   - _STENCILBUFFERZFAILFRONT_KEEP
   - _ZTEST_LESSEQUAL
+  - _ZWRITE_OFF
   - _ZWRITE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -59,7 +62,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: fceaedb038061a74fa715bbcfe82495c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Metallic:
@@ -71,10 +74,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _OutlineMask:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -117,21 +116,18 @@ Material:
     - _HueShiftColor: 0.872
     - _HueShiftStrength: 3.27
     - _IndirectShadowIntensity: 0.5
-    - _LightGradientMidLevel: 0.444
-    - _LightGradientSize: 0.493
-    - _LightGradientSteps: 5
+    - _LightGradientMidLevel: 0.8
+    - _LightGradientSize: 1
+    - _LightGradientSteps: 12
     - _Lighting: 1
     - _MainTexturesSettings: 1
     - _Metallic: 0
-    - _MetallicStrength: 1
+    - _MetallicStrength: 0
     - _Mode: 0
     - _NormalStrength: 1
     - _OcclusionStrength: 1
-    - _Outline: 1
-    - _OutlineMaskAlphaClip: 0.5
-    - _OutlineSize: 1
     - _Parallax: 0.02
-    - _PointSpotLightBoost: 10
+    - _PointSpotLightBoost: 3.6
     - _SmoothnessStrength: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -148,9 +144,8 @@ Material:
     - _ZWrite: 1
     - __dirty: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Color: {r: 0.8, g: 0.8, b: 0.8, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionTint: {r: 0, g: 0, b: 0, a: 0}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 0}
     - _TilingOffset: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
