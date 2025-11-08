@@ -119,12 +119,18 @@ public class PlayerMovement : MonoBehaviour
         PunchHitBox.SetActive(false);
     }
 
+    IEnumerator DeathDelay()
+    {
+        yield return new WaitForSecondsRealtime(.75f);
+        gameObject.transform.position = RespawnCoords;
+        controller.enabled = true;
+    }
+
     public void Respawn()
     {
         audioSource.PlayOneShot(HurtSound);
         Debug.Log("Respawn Called");
         controller.enabled = false;
-        gameObject.transform.position = RespawnCoords;
-        controller.enabled = true;
+        StartCoroutine(DeathDelay());
     }
 }
