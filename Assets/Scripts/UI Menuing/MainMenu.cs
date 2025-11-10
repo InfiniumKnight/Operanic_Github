@@ -8,8 +8,14 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("LVL_ArtPrototype");
     }
 
-        public void LevelSelect()
+    public void LevelSelect()
     {
         SceneManager.LoadScene("LVL_LevelSelect");
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("Quit Game");
+        Application.Quit();     
     }
 }
