@@ -23,6 +23,7 @@ public class StringBehavior : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip CorrectSound;
     [SerializeField] private AudioClip IncorrectSound;
+    [SerializeField] private AudioSource BackgroundLayer;
 
     [Header("General Variables")]
     [SerializeField] private float SequencePlaySpeed;
@@ -33,44 +34,8 @@ public class StringBehavior : MonoBehaviour
 
     private void Update()
     {
-        if (NumHitsRegistered >= CorrectOrder.Count)
-        {
-            for (int b = 0; b < CorrectOrder.Count; b++)
-            {
-                if (CorrectOrder[b].gameObject.GetComponent<StringPunch>().StringNum != InputedOrder[b].gameObject.GetComponent<StringPunch>().StringNum)
-                {
-                    audioSource.PlayOneShot(IncorrectSound);
-                    for (int x = 0; x < CorrectOrder.Count; x++)
-                    {
-                        CorrectOrder[x].gameObject.GetComponent<MeshRenderer>().material = IncorrectColor;
-                        StartCoroutine(Delay2());
-                    }
-                    Penalty();
-                    NumHitsRegistered = 0;
-                    NumCorrect = 0;
-                    InputedOrder.Clear();
-                    break;
-                }
-                else if (CorrectOrder[b].gameObject.GetComponent<StringPunch>().StringNum == InputedOrder[b].gameObject.GetComponent<StringPunch>().StringNum)
-                {
-                    NumCorrect++;
-                }
-            }
-
-            if (NumCorrect == CorrectOrder.Count)
-            {
-                audioSource.PlayOneShot(CorrectSound);
-                gameManager.PuzzleDone(PuzzleNum);
-                for (int x = 0; x < CorrectOrder.Count; x++)
-                {
-                    CorrectOrder[x].gameObject.GetComponent<MeshRenderer>().material = CorrectColor;
-                    NumHitsRegistered = 0;
-
-                }
-            }
-
-        }
     }
+
     public void PlaySequence()
     {
         StartCoroutine(Sequence());
@@ -91,7 +56,35 @@ public class StringBehavior : MonoBehaviour
     public void AddToOrder(GameObject String)
     {
         InputedOrder.Add(String);
+        int b = InputedOrder.Count - 1;
         NumHitsRegistered++;
+
+        if (CorrectOrder[b].gameObject.GetComponent<StringPunch>().StringNum != InputedOrder[b].gameObject.GetComponent<StringPunch>().StringNum)
+        {
+            audioSource.PlayOneShot(IncorrectSound);
+            for (int x = 0; x < CorrectOrder.Count; x++)
+            {
+                CorrectOrder[x].gameObject.GetComponent<MeshRenderer>().material = IncorrectColor;
+                StartCoroutine(Delay2());
+            }
+            Penalty();
+            NumHitsRegistered = 0;
+            NumCorrect = 0;
+            InputedOrder.Clear();
+        }
+
+        else if (NumHitsRegistered >= CorrectOrder.Count)
+        {
+                audioSource.PlayOneShot(CorrectSound);
+                gameManager.PuzzleDone(PuzzleNum);
+                for (int x = 0; x < CorrectOrder.Count; x++)
+                {
+                    CorrectOrder[x].gameObject.GetComponent<MeshRenderer>().material = CorrectColor;
+                    NumHitsRegistered = 0;
+                    BackgroundLayer.volume = .5f;
+
+                }
+        }
     }
 
     IEnumerator Delay2()

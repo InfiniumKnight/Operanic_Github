@@ -10,10 +10,11 @@ Material:
   m_Name: MAT_Copper
   m_Shader: {fileID: 4800000, guid: b9e572a27568d9f4290afb02eef356bc, type: 3}
   m_Parent: {fileID: 2100000, guid: df1613ef37f2803428635ffe92dff758, type: 2}
-  m_ModifiedSerializedProperties: 0
+  m_ModifiedSerializedProperties: 28
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _ALPHATOCOVERAGE_OFF
+  - _ALPHATOCOVERAGE_ON
   - _BLENDALPHADESTINATION_ZERO
   - _BLENDALPHASOURCE_ONE
   - _BLENDOPALPHA_ADD
@@ -21,11 +22,14 @@ Material:
   - _BLENDRGBDESTINATION_ZERO
   - _BLENDRGBSOURCE_ONE
   - _CULLMODE_BACK
+  - _CULLMODE_FRONT
+  - _CULLMODE_OFF
   - _STENCILBUFFERCOMPARISON_DISABLED
   - _STENCILBUFFERFAILFRONT_KEEP
   - _STENCILBUFFERPASSFRONT_KEEP
   - _STENCILBUFFERZFAILFRONT_KEEP
   - _ZTEST_LESSEQUAL
+  - _ZWRITE_OFF
   - _ZWRITE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -38,7 +42,16 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Ints: []
-    m_Floats: []
+    m_Floats:
+    - _AlphatoCoverage: 0
+    - _CullMode: 2
+    - _LightGradientMidLevel: 0.8
+    - _LightGradientSize: 1
+    - _LightGradientSteps: 12
+    - _MetallicStrength: 0
+    - _PointSpotLightBoost: 3.6
+    - _StencilBufferReference: 0
+    - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 0.8288138, b: 0.48742133, a: 1}
   m_BuildTextureStacks: []
