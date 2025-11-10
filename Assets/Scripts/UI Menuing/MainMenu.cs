@@ -1,21 +1,33 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class MainMenu : MonoBehaviour
 {
-    public void StartGame()
+    [Header("Audio")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip clickSound; // click
+    [SerializeField, Range(0f, 1f)] private float volume = 0.5f;
+
+    public void PlayGame()
     {
-        SceneManager.LoadScene("LVL_ArtPrototype");
+        StartCoroutine(PlayThenLoad());
     }
 
-    public void LevelSelect()
+    private IEnumerator PlayThenLoad()
     {
-        SceneManager.LoadScene("LVL_LevelSelect");
+        if (audioSource && clickSound)
+        {
+            audioSource.PlayOneShot(clickSound, volume);
+            yield return new WaitForSecondsRealtime(clickSound.length);
+        }
+
+        SceneManager.LoadScene("LVL_ArtPrototype");
     }
 
     public void QuitGame()
     {
-        Debug.Log("Quit Game");
-        Application.Quit();     
+        Debug.Log("You Quit The Game");
+        Application.Quit();
     }
 }
