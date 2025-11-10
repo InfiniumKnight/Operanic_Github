@@ -21,6 +21,31 @@ AnimationClip:
         time: 0
         value: {x: 0, y: 0, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: -72, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 5
+        value: {x: 0, y: -360, z: 0}
+        inSlope: {x: -0, y: -72, z: -0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.005
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 72, z: 0}
         tangentMode: 0
         weightedMode: 0
@@ -44,9 +69,34 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 0, y: 6, z: 0}
+        value: {x: 0, y: 0, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 70.8, z: 0}
+        outSlope: {x: 0, y: -72, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 5
+        value: {x: 0, y: -360, z: 0}
+        inSlope: {x: -0, y: -72, z: -0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.003
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 0, y: 0, z: 0}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 72, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
@@ -54,7 +104,7 @@ AnimationClip:
       - serializedVersion: 3
         time: 5
         value: {x: 0, y: 360, z: 0}
-        inSlope: {x: -0, y: 70.8, z: -0}
+        inSlope: {x: -0, y: 72, z: -0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
@@ -88,7 +138,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.005
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.007
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -113,7 +163,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.003
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -171,15 +221,15 @@ AnimationClip:
         time: 0
         value: {x: 0, y: 0, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: -72, z: 0}
+        outSlope: {x: 0, y: 72, z: 0}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 5
-        value: {x: 0, y: -360, z: 0}
-        inSlope: {x: -0, y: -72, z: -0}
+        value: {x: 0, y: 360, z: 0}
+        inSlope: {x: -0, y: 72, z: -0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
         weightedMode: 0
@@ -188,32 +238,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.007
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: {x: 0, y: 0, z: 0}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: -72, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      - serializedVersion: 3
-        time: 5
-        value: {x: 0, y: -360, z: 0}
-        inSlope: {x: -0, y: -72, z: -0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|
+    path: Button Gear
   m_PositionCurves: []
   m_ScaleCurves: []
   m_FloatCurves: []
@@ -226,7 +251,25 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
+      path: 3596565339
+      attribute: 4
+      script: {fileID: 0}
+      typeID: 4
+      customType: 4
+      isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    - serializedVersion: 2
       path: 2706901965
+      attribute: 4
+      script: {fileID: 0}
+      typeID: 4
+      customType: 4
+      isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 1060937326
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -244,7 +287,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3596565339
+      path: 944855671
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -253,7 +296,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1060937326
+      path: 3308369527
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -280,16 +323,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 944855671
-      attribute: 4
-      script: {fileID: 0}
-      typeID: 4
-      customType: 4
-      isPPtrCurve: 0
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 3308369527
+      path: 1952779318
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -345,6 +379,96 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.005
+    classID: 4
+    script: {fileID: 0}
+    flags: 16
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: -72
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 5
+        value: -360
+        inSlope: -72
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.y
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.005
+    classID: 4
+    script: {fileID: 0}
+    flags: 16
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 5
+        value: 0
+        inSlope: -0
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.z
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.005
+    classID: 4
+    script: {fileID: 0}
+    flags: 16
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 5
+        value: 0
+        inSlope: -0
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.x
     path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.004
     classID: 4
     script: {fileID: 0}
@@ -435,6 +559,96 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.003
+    classID: 4
+    script: {fileID: 0}
+    flags: 16
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: -72
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 5
+        value: -360
+        inSlope: -72
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.y
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.003
+    classID: 4
+    script: {fileID: 0}
+    flags: 16
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 5
+        value: 0
+        inSlope: -0
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.z
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.003
+    classID: 4
+    script: {fileID: 0}
+    flags: 16
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 5
+        value: 0
+        inSlope: -0
+        outSlope: 0
+        tangentMode: 69
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.x
     path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.002
     classID: 4
     script: {fileID: 0}
@@ -445,9 +659,9 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 6
+        value: 0
         inSlope: 0
-        outSlope: 70.8
+        outSlope: 72
         tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
@@ -455,7 +669,7 @@ AnimationClip:
       - serializedVersion: 3
         time: 5
         value: 360
-        inSlope: 70.8
+        inSlope: 72
         outSlope: 0
         tangentMode: 69
         weightedMode: 0
@@ -525,7 +739,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.005
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.007
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -555,7 +769,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.005
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.007
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -585,7 +799,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.005
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.007
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -615,7 +829,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.003
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -645,7 +859,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.003
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -675,7 +889,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.003
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -885,7 +1099,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.007
+    path: Button Gear
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -897,15 +1111,15 @@ AnimationClip:
         time: 0
         value: 0
         inSlope: 0
-        outSlope: -72
+        outSlope: 72
         tangentMode: 69
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 5
-        value: -360
-        inSlope: -72
+        value: 360
+        inSlope: 72
         outSlope: 0
         tangentMode: 69
         weightedMode: 0
@@ -915,7 +1129,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.007
+    path: Button Gear
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -945,97 +1159,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.007
-    classID: 4
-    script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 5
-        value: 0
-        inSlope: -0
-        outSlope: 0
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.x
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|
-    classID: 4
-    script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: -72
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 5
-        value: -360
-        inSlope: -72
-        outSlope: 0
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.y
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|
-    classID: 4
-    script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 5
-        value: 0
-        inSlope: -0
-        outSlope: 0
-        tangentMode: 69
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.z
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|
+    path: Button Gear
     classID: 4
     script: {fileID: 0}
     flags: 16
@@ -1048,6 +1172,78 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.003
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.003
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.003
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
+    path: Button Gear
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Button Gear
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Button Gear
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.z
     path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.002
     classID: 4
     script: {fileID: 0}
@@ -1120,7 +1316,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.003
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.005
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1132,7 +1328,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.003
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.005
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1144,7 +1340,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.003
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.005
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1192,7 +1388,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.007
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.006
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1204,7 +1400,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.007
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.006
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1216,7 +1412,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.007
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.006
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1228,7 +1424,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.005
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.007
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1240,7 +1436,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.005
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.007
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1252,43 +1448,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.005
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.006
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.006
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.006
+    path: MSH_GearSmall_WBX.006|MSH_GearSmall_WBX|Dupli|.007
     classID: 4
     script: {fileID: 0}
     flags: 0
