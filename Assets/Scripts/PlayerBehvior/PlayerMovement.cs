@@ -19,8 +19,10 @@ public class PlayerMovement : MonoBehaviour
     private bool groundedPlayer;
     private InputActionAsset asset;
     [SerializeField] private GameObject PunchHitBox;
+    [SerializeField] private Animator animator;
     public float dashCooldown = 0f;
     public float dashTime = .08f;
+    public bool dashing = false;
 
     public Vector3 RespawnCoords;
 
@@ -48,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         groundedPlayer = controller.isGrounded;
-
+ 
         // Read input
         Vector2 input = playerInput.actions["Move"].ReadValue<Vector2>();
         move = new Vector3(input.x, 0, input.y);
@@ -59,11 +61,16 @@ public class PlayerMovement : MonoBehaviour
         if (playerInput.actions["Jump"].triggered && groundedPlayer)
         {
             playerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
+            animator.Play("A_Jump_001");
             audioSource.PlayOneShot(JumpSound);
+            
         }
 
         if (playerInput.actions["Dash"].triggered && dashCooldown <= 0f)
         {
+            dashing = true;
+            animator.SetFloat("Speed", 1);
+
             StartCoroutine(Dash());
         }
         else if (dashCooldown > 0f)
@@ -80,6 +87,14 @@ public class PlayerMovement : MonoBehaviour
             float targetAngle = Mathf.Atan2(input.x, input.y) * Mathf.Rad2Deg;
             Quaternion rotation = Quaternion.Euler(0, targetAngle, 0);
             transform.rotation = rotation;
+            if (dashing != true)
+            {
+                animator.SetFloat("Speed", .1f);
+            }
+        }
+        else
+        {
+            animator.SetFloat("Speed", 0);
         }
 
         if (playerInput.actions["Punch"].triggered && PunchHitBox.activeInHierarchy == false)
@@ -91,6 +106,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Punch()
     {
+        animator.Play("A_Punch_001");
         PunchHitBox.SetActive(true);
         audioSource.PlayOneShot(PunchSound);
         //Debug.Log("Punching");
@@ -108,9 +124,10 @@ public class PlayerMovement : MonoBehaviour
             controller.Move(move * Time.deltaTime * dashSpeed);
             
             dashCooldown = 1.5f;
-
             yield return null;
         }
+        dashing = false;
+        
     }
 
     IEnumerator Delay()
