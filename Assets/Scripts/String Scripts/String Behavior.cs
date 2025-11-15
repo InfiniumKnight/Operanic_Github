@@ -105,4 +105,14 @@ public class StringBehavior : MonoBehaviour
         HitboxOne.GetComponent<StringHitBoxBehavior>().Go(1);
         HitboxTwo.GetComponent<StringHitBoxBehavior>().Go(-1);
     }
+
+    public void Reset()
+    {
+        for (int x = 0; x < CorrectOrder.Count; x++)
+        {
+            CorrectOrder[x].gameObject.GetComponent<MeshRenderer>().material = BaseColor;
+            CorrectOrder[x].gameObject.GetComponent<StringPunch>().CanBePunched = true;
+        }
+        InputedOrder.Clear();
+    }
 }

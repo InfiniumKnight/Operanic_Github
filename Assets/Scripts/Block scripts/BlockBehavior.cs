@@ -18,7 +18,7 @@ public class BlockBehavior : MonoBehaviour
     [SerializeField] GameObject FallingGear;
 
     [SerializeField] Activation activation;
-    private bool canMove = true;
+    public bool canMove = true;
     private bool canSpawnGear = true;
 
     private void Start()
@@ -78,7 +78,6 @@ public class BlockBehavior : MonoBehaviour
                 activation.Activate();
                 Debug.Log("reachGoal");
                 audioSource.PlayOneShot(ClickIntoPlace);
-                Destroy(rb);
                 canMove = false;
             }
             else if (other.gameObject.tag != GoalTag && other.gameObject.tag.Contains("Goal"))

@@ -29,8 +29,8 @@ Transform:
   m_GameObject: {fileID: 3699070409518973575}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.003, y: 1.093, z: 0.485}
-  m_LocalScale: {x: 0.385, y: 0.39, z: 0.56}
+  m_LocalPosition: {x: 0.003, y: 1.093, z: 0.693}
+  m_LocalScale: {x: 0.385, y: 0.39, z: 1.015952}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2014069568555560043}
@@ -155,15 +155,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb94f2f7da9a44f4ab8e0e750aa530ed, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.82
+      value: -0.20314944
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb94f2f7da9a44f4ab8e0e750aa530ed, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.161
+      value: -10.787043
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb94f2f7da9a44f4ab8e0e750aa530ed, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.37
+      value: 25.396168
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb94f2f7da9a44f4ab8e0e750aa530ed, type: 3}
       propertyPath: m_LocalRotation.w
@@ -171,15 +171,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb94f2f7da9a44f4ab8e0e750aa530ed, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb94f2f7da9a44f4ab8e0e750aa530ed, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb94f2f7da9a44f4ab8e0e750aa530ed, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fb94f2f7da9a44f4ab8e0e750aa530ed, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -253,12 +253,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9096dcb25624d244d86e67fb62a6bc8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 5
+  playerSpeed: 10
   move: {x: 0, y: 0, z: 0}
   PunchHitBox: {fileID: 3699070409518973575}
   animator: {fileID: 5553858969066305041}
   dashCooldown: 0
   dashTime: 0.2
+  dashing: 0
   RespawnCoords: {x: 0, y: 0, z: 0}
   audioSource: {fileID: 0}
   JumpSound: {fileID: 8300000, guid: 3a9f38844170a804a9a967780c888f8b, type: 3}
