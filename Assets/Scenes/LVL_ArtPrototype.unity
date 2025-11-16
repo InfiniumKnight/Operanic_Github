@@ -2161,8 +2161,8 @@ MonoBehaviour:
   SteamHitBox: {fileID: 1734772404}
   audioSource: {fileID: 0}
   SteamSound: {fileID: 0}
-  DelayBetweenBlasts: 5.5
-  BlastDuration: 5
+  DelayBetweenBlasts: 5
+  BlastDuration: 3
 --- !u!4 &225483982 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5713184885418570736, guid: 4837745826b898442b55d9289a1e4ef2, type: 3}
@@ -2845,7 +2845,7 @@ MonoBehaviour:
   SteamHitBox: {fileID: 1130592331}
   audioSource: {fileID: 240489952}
   SteamSound: {fileID: 8300000, guid: b18dd97f740081f409f8a52d4acb918f, type: 3}
-  DelayBetweenBlasts: 6
+  DelayBetweenBlasts: 5
   BlastDuration: 3
 --- !u!1 &319407165 stripped
 GameObject:
@@ -4140,6 +4140,7 @@ MonoBehaviour:
   GoalTag: Box3Goal
   FallingGear: {fileID: 2843035694689735084, guid: aa323109a2fb143459a7d31d75c6748c, type: 3}
   activation: {fileID: 1711954653}
+  canMove: 1
 --- !u!54 &522016659
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4591,8 +4592,11 @@ MonoBehaviour:
   numOfActivationsNeeded: 1
   PuzzleNum: 1
   gameManager: {fileID: 1645212771}
+  Blocks: []
+  StartingPositions: []
   backgroundSources:
   - {fileID: 1609579657}
+  BackgroundMusic: 1
 --- !u!1 &588536103
 GameObject:
   m_ObjectHideFlags: 0
@@ -8946,6 +8950,7 @@ MonoBehaviour:
   GoalTag: Box4Goal
   FallingGear: {fileID: 2843035694689735084, guid: aa323109a2fb143459a7d31d75c6748c, type: 3}
   activation: {fileID: 1711954653}
+  canMove: 1
 --- !u!54 &1007065426
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -13562,6 +13567,7 @@ MonoBehaviour:
   GoalTag: Box2Goal
   FallingGear: {fileID: 2843035694689735084, guid: aa323109a2fb143459a7d31d75c6748c, type: 3}
   activation: {fileID: 1711954653}
+  canMove: 1
 --- !u!54 &1433302261
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -16615,10 +16621,13 @@ MonoBehaviour:
   numOfActivationsNeeded: 3
   PuzzleNum: 2
   gameManager: {fileID: 1645212771}
+  Blocks: []
+  StartingPositions: []
   backgroundSources:
   - {fileID: 1902407253}
   - {fileID: 830236000}
   - {fileID: 172962927}
+  BackgroundMusic: 1
 --- !u!4 &1711954654
 Transform:
   m_ObjectHideFlags: 0
