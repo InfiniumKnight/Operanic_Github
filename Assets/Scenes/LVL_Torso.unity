@@ -3058,7 +3058,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 31b6c89b1b171ba44b50cfb45229d8fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.46
+      value: -8.11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 31b6c89b1b171ba44b50cfb45229d8fb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3207,6 +3207,10 @@ PrefabInstance:
       propertyPath: Parent
       value: 
       objectReference: {fileID: 544111923}
+    - target: {fileID: 6448901929500088462, guid: 84a4d9fdcea804c4e8e4122990fe24d5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f9c6c13f0a44ee74ba3ea39eaac26592, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6008,7 +6012,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 31b6c89b1b171ba44b50cfb45229d8fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.82
+      value: -11.41
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 31b6c89b1b171ba44b50cfb45229d8fb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10187,6 +10191,10 @@ PrefabInstance:
       propertyPath: Parent
       value: 
       objectReference: {fileID: 776421495}
+    - target: {fileID: 6448901929500088462, guid: 84a4d9fdcea804c4e8e4122990fe24d5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f9c6c13f0a44ee74ba3ea39eaac26592, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12424,7 +12432,7 @@ Animator:
   m_GameObject: {fileID: 1982549516}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 03933754159910d4fb1ea0a1c71e8edf, type: 2}
+  m_Controller: {fileID: 9100000, guid: f9c6c13f0a44ee74ba3ea39eaac26592, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12994,6 +13002,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1.43
       objectReference: {fileID: 0}
+    - target: {fileID: 5995383206610953370, guid: ca61ad485f08267448f0e32365f5a287, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: f9c6c13f0a44ee74ba3ea39eaac26592, type: 2}
     - target: {fileID: 8987230820945945280, guid: ca61ad485f08267448f0e32365f5a287, type: 3}
       propertyPath: m_Name
       value: String holder

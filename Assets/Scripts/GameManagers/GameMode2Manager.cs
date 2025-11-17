@@ -9,8 +9,8 @@ public class GameMode2Manager : GameManager
     [Header("TimeVariables")]
     [SerializeField] float startTime = 10.0f;
     [SerializeField] float RemainingTime = 10.0f;
-    [SerializeField] int TimeRegained = 3;
-    [SerializeField] float TimeTillNextPuzzle = 2;
+    [SerializeField] int TimeRegained = 5;
+    [SerializeField] float TimeTillNextPuzzle = 3;
     [SerializeField] TextMeshProUGUI Clock;
 
     [Header("PuzzleObjects")]
@@ -79,7 +79,7 @@ public class GameMode2Manager : GameManager
         {
             HighScore = Score;
         }
-        SceneManager.LoadScene("TEMP_LevelFinish");
+        SceneManager.LoadScene("LVL_LevelSelect");
     }
 
     public void PuzzleSelect()
