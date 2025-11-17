@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.45911938, g: 0.19279747, b: 0.14293335, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.02
+  m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.5597484, g: 0.24180676, b: 0.2270677, a: 1}
@@ -96,7 +96,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 3f9bd3d02ca7aa941ad1a47c6e763414, type: 2}
+  m_LightingDataAsset: {fileID: 0}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -8328,7 +8328,7 @@ MonoBehaviour:
   Blocks:
   - {fileID: 2113572072}
   StartingPositions:
-  - {x: -147.78, y: -7.55, z: 27.73}
+  - {x: -147.78, y: -7.55, z: 28.43}
   backgroundSources: []
   BackgroundMusic: 0
 --- !u!4 &1867125164
@@ -9662,7 +9662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6838794355805432814, guid: 4686a03159fe0074eb84179d3b1fc73b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 27.73
+      value: 28.43
       objectReference: {fileID: 0}
     - target: {fileID: 6838794355805432814, guid: 4686a03159fe0074eb84179d3b1fc73b, type: 3}
       propertyPath: m_LocalRotation.w
