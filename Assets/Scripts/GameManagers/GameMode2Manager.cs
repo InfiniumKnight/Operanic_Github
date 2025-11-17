@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using TMPro;
 using UnityEngine;
 
 public class GameMode2Manager : GameManager
@@ -10,6 +11,7 @@ public class GameMode2Manager : GameManager
     [SerializeField] float RemainingTime = 10.0f;
     [SerializeField] int TimeRegained = 3;
     [SerializeField] float TimeTillNextPuzzle = 2;
+    [SerializeField] TextMeshProUGUI Clock;
 
     [Header("PuzzleObjects")]
     [SerializeField] Activation Puzzle1;
@@ -24,6 +26,7 @@ public class GameMode2Manager : GameManager
     [Header("Score")]
     [SerializeField] int Score;
     public static int HighScore;
+    [SerializeField] TextMeshProUGUI ScoreUI;
 
     private void Start()
     {
@@ -36,6 +39,7 @@ public class GameMode2Manager : GameManager
         if(RemainingTime >= 0)
         {
             RemainingTime -= Time.deltaTime;
+            Clock.text = new string("Time Remaining: " + RemainingTime.ToString("F0"));
         }
         if(RemainingTime <= 0)
         {
@@ -47,6 +51,7 @@ public class GameMode2Manager : GameManager
     {
         RemainingTime += TimeRegained;
         Score++;
+        ScoreUI.text = new string("Score: " + Score);
         if (PuzzleNum == 1)
         {
             PuzzleLeavePads[0].Activate();
