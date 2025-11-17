@@ -3,12 +3,32 @@ guid: fb94f2f7da9a44f4ab8e0e750aa530ed
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MATT_CBody
+    second: {fileID: 2100000, guid: b15b5c2bbb80cc0419e256e8b50b43e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Accessories
+    second: {fileID: 2100000, guid: cc4ad5e3c07fd2d47990253fe186de7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_CFit
+    second: {fileID: 2100000, guid: 203d0a76c0d173e4c8fc6e58d316e41e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_CHair
+    second: {fileID: 2100000, guid: c3315f314294c6a48921b64fe9609f26, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
