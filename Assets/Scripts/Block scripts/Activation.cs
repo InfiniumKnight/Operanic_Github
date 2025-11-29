@@ -18,7 +18,7 @@ public class Activation : MonoBehaviour
     {
         if (BackgroundMusic == true)
         {
-            backgroundSources[BackgroundIndex].volume = .30f;
+            backgroundSources[BackgroundIndex].volume = .1f;
             BackgroundIndex++;
         }
         numOfActivationsAchieved++;
