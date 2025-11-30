@@ -65,6 +65,12 @@ public class LevelSelect : MonoBehaviour
         TorsoSelectUI.SetActive(false); //Undoes the above
     }
 
+    public void SecondGameSelect()
+    {
+        audioSource.PlayOneShot(postMenuClick);
+        SceneManager.LoadScene("LVL_Gamemode2");
+    }
+
     public void QuitGame()
     {
         Application.Quit();

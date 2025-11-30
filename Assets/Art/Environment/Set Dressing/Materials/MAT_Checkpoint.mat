@@ -112,9 +112,9 @@ Material:
     - _HueShiftColor: 0.872
     - _HueShiftStrength: 3.27
     - _IndirectShadowIntensity: 0.5
-    - _LightGradientMidLevel: 0.444
-    - _LightGradientSize: 0.493
-    - _LightGradientSteps: 5
+    - _LightGradientMidLevel: 0.64
+    - _LightGradientSize: 0.54
+    - _LightGradientSteps: 9.3
     - _Lighting: 1
     - _MainTexturesSettings: 1
     - _Metallic: 0
@@ -123,7 +123,7 @@ Material:
     - _NormalStrength: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _PointSpotLightBoost: 10
+    - _PointSpotLightBoost: 2.6
     - _SmoothnessStrength: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1

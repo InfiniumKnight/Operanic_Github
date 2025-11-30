@@ -7,6 +7,7 @@ public class SteamPipe : MonoBehaviour
     [SerializeField] private GameObject SteamHitBox;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip SteamSound;
+    [SerializeField] private ParticleSystem SteamVFX;
 
     public float DelayBetweenBlasts = 4f;
     public float BlastDuration = .5f;
@@ -16,22 +17,10 @@ public class SteamPipe : MonoBehaviour
     void Start()
     {
         SteamHitBox.SetActive(false);
-        audioSource.gameObject.GetComponent<AudioSource>();
-    }
+        audioSource.volume = 0.5f;
+        StartCoroutine(Delay2());
+        SteamVFX.Stop();
 
-    void Update()
-    {
-        if ( SincelastBlast < DelayBetweenBlasts )
-        {
-            SincelastBlast += Time.deltaTime;
-        }
-        else if ( SincelastBlast >= DelayBetweenBlasts)
-        {
-            
-            StartCoroutine(Delay());
-            SincelastBlast = 0;
-
-        }
     }
 
     IEnumerator Delay()
@@ -39,8 +28,23 @@ public class SteamPipe : MonoBehaviour
         SteamHitBox.SetActive(true);
         audioSource.PlayOneShot(SteamSound);
         yield return new WaitForSecondsRealtime(BlastDuration);
+        SteamVFX.Stop();
         SteamHitBox.SetActive(false);
         audioSource.Stop();
+        StartCoroutine(Delay2());
+    }
+
+    IEnumerator Delay2()
+    {
+        StartCoroutine(VFXDelay());
+        yield return new WaitForSecondsRealtime(DelayBetweenBlasts);
         
+        StartCoroutine(Delay());
+    }
+
+    IEnumerator VFXDelay()
+    {
+        yield return new WaitForSecondsRealtime(DelayBetweenBlasts - 0.7f);
+        SteamVFX.Play();
     }
 }

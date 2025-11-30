@@ -3,7 +3,47 @@ guid: 4837745826b898442b55d9289a1e4ef2
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_AirSwitch
+    second: {fileID: 2100000, guid: 1e414fe4d74fb7e418bb01bc3f903721, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_ArmSKin
+    second: {fileID: 2100000, guid: d7b1caef0c2101445b5a1c6ba0e0b6a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_BatPack
+    second: {fileID: 2100000, guid: 76a00c4e3a3ad7e4baf5226e790202d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_MasterPistonStylized
+    second: {fileID: 2100000, guid: 367329f74e0dec541adc82bd6cc5c9fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_PhilipsScrew
+    second: {fileID: 2100000, guid: d44f0bf5433c2ed4b800101dbb1a684d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_PivotPiston.001
+    second: {fileID: 2100000, guid: e142a94da9bab20479021e220d7a4774, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_StainlessSteel
+    second: {fileID: 2100000, guid: fc77623ad6e01f74db89ff94e57aea80, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_soft blue
+    second: {fileID: 2100000, guid: fc77623ad6e01f74db89ff94e57aea80, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
