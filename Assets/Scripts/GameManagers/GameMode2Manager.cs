@@ -25,7 +25,6 @@ public class GameMode2Manager : GameManager
 
     [Header("Score")]
     [SerializeField] int Score;
-    public static int HighScore;
     [SerializeField] TextMeshProUGUI ScoreUI;
 
     private void Start()
@@ -75,9 +74,10 @@ public class GameMode2Manager : GameManager
     public void LooseState()
     {
         Debug.Log("Game Over!");
-        if(Score > HighScore)
+        if(Score > GeneralDataSaver.HighScore)
         {
-            HighScore = Score;
+            GeneralDataSaver.HighScore = Score;
+            GeneralDataSaver.SaveData();
         }
         SceneManager.LoadScene("LVL_LevelSelect");
     }
