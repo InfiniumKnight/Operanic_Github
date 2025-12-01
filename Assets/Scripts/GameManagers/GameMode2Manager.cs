@@ -27,8 +27,15 @@ public class GameMode2Manager : GameManager
     [SerializeField] int Score;
     [SerializeField] TextMeshProUGUI ScoreUI;
 
+    [Header("UI")]
+    [SerializeField] GameObject UI_HighScoreScreen;
+    [SerializeField] GameObject UI_InGame;
+    [SerializeField] TextMeshProUGUI ScoreGameOverUI;
+    [SerializeField] TextMeshProUGUI HighScoreGameOverUI;
+
     private void Start()
     {
+        UI_HighScoreScreen.SetActive(false);
         RemainingTime = startTime;
         PuzzleSelect();
     }
@@ -79,7 +86,10 @@ public class GameMode2Manager : GameManager
             GeneralDataSaver.HighScore = Score;
             GeneralDataSaver.SaveData();
         }
-        SceneManager.LoadScene("LVL_LevelSelect");
+        UI_HighScoreScreen.SetActive(true);
+        ScoreGameOverUI.text = new string("Score: " + Score);
+        HighScoreGameOverUI.text = new string ("High Score: " + GeneralDataSaver.HighScore);
+
     }
 
     public void PuzzleSelect()

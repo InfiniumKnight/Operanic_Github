@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TEMP_LevelFinish.unity
     guid: 9a8e263a986d0604584f9ed96cfa322f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TEMP_UnderConstruction.unity
     guid: dee7f4da5e4fd8145a7ad87ccf8e799b
   - enabled: 1
