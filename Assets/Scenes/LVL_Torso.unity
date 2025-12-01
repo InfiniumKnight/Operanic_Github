@@ -5311,7 +5311,7 @@ Transform:
   m_GameObject: {fileID: 861899474}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9999354, z: -0, w: 0.011366631}
-  m_LocalPosition: {x: 0.2611632, y: 0.17205054, z: 0.070366815}
+  m_LocalPosition: {x: -0.017, y: 0.17205054, z: 0.063}
   m_LocalScale: {x: 0.35971957, y: 0.10600476, z: 0.45802847}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7630,15 +7630,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1168120337233158860, guid: 6f63cc5ad1d257347a3db012ce056049, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.271222
+      value: 4.9365315
       objectReference: {fileID: 0}
     - target: {fileID: 1168120337233158860, guid: 6f63cc5ad1d257347a3db012ce056049, type: 3}
       propertyPath: m_LocalScale.y
-      value: 11.101388
+      value: 12.769927
       objectReference: {fileID: 0}
     - target: {fileID: 1168120337233158860, guid: 6f63cc5ad1d257347a3db012ce056049, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.6876352
+      value: 4.2418866
       objectReference: {fileID: 0}
     - target: {fileID: 1168120337233158860, guid: 6f63cc5ad1d257347a3db012ce056049, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7680,17 +7680,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1467607298675521273, guid: 6f63cc5ad1d257347a3db012ce056049, type: 3}
+      propertyPath: m_Size.x
+      value: 1.9071652
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467607298675521273, guid: 6f63cc5ad1d257347a3db012ce056049, type: 3}
+      propertyPath: m_Size.z
+      value: 1.375654
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467607298675521273, guid: 6f63cc5ad1d257347a3db012ce056049, type: 3}
+      propertyPath: m_Center.x
+      value: -0.049605045
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467607298675521273, guid: 6f63cc5ad1d257347a3db012ce056049, type: 3}
+      propertyPath: m_Center.z
+      value: -0.18782648
+      objectReference: {fileID: 0}
     - target: {fileID: 1843870596260379492, guid: 6f63cc5ad1d257347a3db012ce056049, type: 3}
       propertyPath: m_Name
       value: LevelEndTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 1843870596260379492, guid: 6f63cc5ad1d257347a3db012ce056049, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3036921837498635591, guid: 6f63cc5ad1d257347a3db012ce056049, type: 3}
+      propertyPath: TorsoLevel
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5481908376470706835, guid: 6f63cc5ad1d257347a3db012ce056049, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
