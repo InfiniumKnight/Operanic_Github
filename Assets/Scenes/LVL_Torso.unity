@@ -7702,7 +7702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1843870596260379492, guid: 6f63cc5ad1d257347a3db012ce056049, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3036921837498635591, guid: 6f63cc5ad1d257347a3db012ce056049, type: 3}
       propertyPath: TorsoLevel

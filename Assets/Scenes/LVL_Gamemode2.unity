@@ -1996,8 +1996,8 @@ MonoBehaviour:
   ScoreUI: {fileID: 532567963}
   UI_HighScoreScreen: {fileID: 1002397599}
   UI_InGame: {fileID: 1897228863}
-  ScoreGameOverUI: {fileID: 0}
-  HighScoreGameOverUI: {fileID: 0}
+  ScoreGameOverUI: {fileID: 1911020766}
+  HighScoreGameOverUI: {fileID: 2133183929}
 --- !u!4 &322492288
 Transform:
   m_ObjectHideFlags: 0
