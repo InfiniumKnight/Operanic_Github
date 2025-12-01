@@ -1612,7 +1612,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.5019608, g: 0.43529412, b: 0.33333334, a: 1}
@@ -1622,8 +1622,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: 16a644de3db28d94788fb8bfa2c1da51, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 16a644de3db28d94788fb8bfa2c1da51, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -1676,12 +1676,12 @@ MonoBehaviour:
   m_Material: {fileID: 2100000, guid: 36159306ca93bf24b88acd5bfad3b93f, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: 11.31, y: 32.17, z: 12.75, w: 33.15}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0311531703afeb44d8d71c8fa4c7bc30, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f6bac2bad32517543818fa52c6849f11, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2319,7 +2319,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.5, g: 0.4316468, b: 0.3325472, a: 1}
@@ -2329,8 +2329,8 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 21300000, guid: 16a644de3db28d94788fb8bfa2c1da51, type: 3}
+    m_PressedSprite: {fileID: 21300000, guid: 16a644de3db28d94788fb8bfa2c1da51, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -2383,12 +2383,12 @@ MonoBehaviour:
   m_Material: {fileID: 2100000, guid: 36159306ca93bf24b88acd5bfad3b93f, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: 10.38, y: 32.77, z: 13.38, w: 32.17}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0311531703afeb44d8d71c8fa4c7bc30, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f6bac2bad32517543818fa52c6849f11, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
