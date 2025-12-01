@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 226015000b7f49a4faabece8aab61068
+guid: 39b9c1aa46b53a845a2df55394f9e124
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,38 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: MAT_BrightRed
-    second: {fileID: 2100000, guid: a2a971e9d28166a408c2752391eb35c6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: MAT_CableTrim
-    second: {fileID: 2100000, guid: c252699670eaf7e4aa59f2e9505b6c1d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MAT_Copper
-    second: {fileID: 2100000, guid: a967b9c664928d048a6c4aa703092a7c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MAT_ElbowCluster
-    second: {fileID: 2100000, guid: fea9fa53ab877f0498f1fa3d0d669a24, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MAT_MetalPipe
-    second: {fileID: 2100000, guid: 7212d6306d4471449a936473fb38bffb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MAT_RotatorArms
-    second: {fileID: 2100000, guid: 5a8d2a8f178dcad43a5ee1a492302e12, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: MAT_StainlessSteel
-    second: {fileID: 2100000, guid: 368b86db9ccaf324bb86ce0d523591db, type: 2}
+    second: {fileID: 2100000, guid: 2cf7a5ad526d3ba4d8d8461382ee5696, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
