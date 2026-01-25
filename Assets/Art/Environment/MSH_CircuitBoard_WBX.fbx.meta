@@ -7,13 +7,48 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: MAT_Bulb_1
+    second: {fileID: 2100000, guid: b6e5c0361aa08524cac4ed4c988194a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Bulb_2
+    second: {fileID: 2100000, guid: 52a6157a920b81143be702ad8be269af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Bulb_3
+    second: {fileID: 2100000, guid: 32cc103dffffd5c459225e04dea6b99c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Bulb_4
+    second: {fileID: 2100000, guid: 336f5d8c8e3b7ba46a5f9aef956e7560, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Bulb_5
+    second: {fileID: 2100000, guid: c3d8d2ca80daf8041bf70ec9b969b5d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Cables
+    second: {fileID: 2100000, guid: 0d2455a21319d394397045ca6cf16ab4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: MAT_Copper
-    second: {fileID: -2510965839025755002, guid: 4837745826b898442b55d9289a1e4ef2, type: 3}
+    second: {fileID: 2100000, guid: 2750a815b09de514bb253df2ca59b752, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MAT_Silver
+    second: {fileID: 2100000, guid: e5651e263e650db498d99537873c9bad, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0

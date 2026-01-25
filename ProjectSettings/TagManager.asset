@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Wall
+  - PunchBox
+  - Box1Goal
+  - TempGoalTag
+  - MovingBlock
+  - Box2Goal
+  - Box3Goal
+  - Box4Goal
   layers:
   - Default
   - TransparentFX
